@@ -9,16 +9,11 @@
         /* --- CSS VARIABLES & RESET --- */
         :root {
             --primary: #2563eb;
-            /* Professional Blue */
             --primary-dark: #1e40af;
             --bg: #f8fafc;
-            /* Light Gray Background */
             --surface: #ffffff;
-            /* White Cards */
             --text-main: #1e293b;
-            /* Dark Slate */
             --text-sec: #64748b;
-            /* Muted Text */
             --border: #e2e8f0;
             --accent: #0f172a;
             --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -63,15 +58,15 @@
 
         /* --- HEADER --- */
         header {
-            background-color: var(--surface);
-            border-bottom: 1px solid var(--border);
-            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 1.25rem 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1.5rem;
-            box-shadow: 0 1px 3px rgb(0 0 0 / 0.05);
+            gap: 0.75rem;
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
             position: relative;
+            border-bottom: none;
         }
 
         .brand-container {
@@ -80,29 +75,73 @@
             align-items: center;
             width: 100%;
             max-width: 1200px;
+            margin: 0 auto;
+            gap: 1rem;
+            padding: 0 0.5rem;
+        }
+
+        .header-main {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
         }
 
         .brand {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
 
-        .brand h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--accent);
-            letter-spacing: -0.5px;
+        .brand-logo {
+            width: 56px;
+            height: 56px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+            border: 2px solid rgba(255,255,255,0.12);
+            background: rgba(255,255,255,0.06);
+            display: block;
         }
 
-        .brand span {
-            background: var(--primary);
+        .brand-text h1 {
+            font-size: 1.2rem;
+            font-weight: 800;
             color: white;
-            padding: 2px 8px;
-            border-radius: 6px;
-            font-size: 0.8rem;
+            letter-spacing: -0.3px;
+            margin: 0;
+            line-height: 1.05;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.12);
+        }
+
+        .brand-text .badge {
+            display: inline-block;
+            margin-top: 4px;
+            background: rgba(255, 255, 255, 0.18);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 14px;
+            font-size: 0.675rem;
+            font-weight: 700;
             text-transform: uppercase;
-            font-weight: 600;
+            letter-spacing: 0.6px;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-area {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 0.5rem;
+        }
+
+        .search-area .search-container {
+            max-width: 720px;
+            width: 100%;
         }
 
         /* --- DARK MODE TOGGLE --- */
@@ -149,41 +188,42 @@
         .search-input:focus {
             border-color: var(--primary);
             background-color: var(--surface);
-            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
         .search-icon {
             position: absolute;
-            left: 20px;
+            left: 18px;
             top: 50%;
             transform: translateY(-50%);
-            color: var(--text-sec);
+            color: #666;
             font-size: 1.1rem;
+            opacity: 0.7;
         }
 
         /* CLEAR SEARCH BUTTON */
         .clear-search {
             position: absolute;
-            right: 25px;
+            right: 18px;
             top: 50%;
             transform: translateY(-50%);
             background: none;
             border: none;
-            color: var(--text-sec);
+            color: #999;
             cursor: pointer;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             display: none;
             align-items: center;
             justify-content: center;
-            width: 35px;
-            height: 35px;
+            width: 36px;
+            height: 36px;
             border-radius: 50%;
             transition: all 0.2s ease;
         }
 
         .clear-search:hover {
-            color: var(--primary);
-            background: rgba(0, 0, 0, 0.1);
+            color: #333;
+            background: rgba(0, 0, 0, 0.08);
         }
 
         /* --- CATEGORY NAVIGATION --- */
@@ -193,18 +233,20 @@
             padding: 0.75rem 0;
             width: 100%;
             display: flex;
-            flex-direction: column; /* Changed to handle dropdown */
             align-items: center;
         }
 
         .nav-inner {
             max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
             padding: 0 2rem;
             display: flex;
             gap: 10px;
             overflow-x: auto;
             white-space: nowrap;
             scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
         }
 
         .nav-inner::-webkit-scrollbar {
@@ -212,15 +254,16 @@
         }
 
         .cat-btn {
-            padding: 8px 18px;
+            padding: 10px 20px;
             border-radius: 20px;
             border: 1px solid var(--border);
             background: var(--surface);
             color: var(--text-sec);
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             font-weight: 600;
             transition: 0.2s;
+            flex-shrink: 0;
         }
 
         .cat-btn:hover {
@@ -233,34 +276,6 @@
             color: white;
             border-color: var(--primary);
             box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
-        }
-
-        /* NEW: SUB-ITEM DROPDOWN STYLE */
-        .sub-category-container {
-            width: 100%;
-            background: var(--bg);
-            display: none; /* Hidden by default */
-            justify-content: center;
-            padding: 10px 0;
-            border-top: 1px solid var(--border);
-            margin-top: 10px;
-        }
-
-        .sub-btn {
-            padding: 6px 14px;
-            margin: 0 5px;
-            border-radius: 15px;
-            border: 1px solid var(--border);
-            background: var(--surface);
-            color: var(--text-sec);
-            cursor: pointer;
-            font-size: 0.8rem;
-            transition: 0.2s;
-        }
-        
-        .sub-btn:hover {
-            color: var(--primary);
-            border-color: var(--primary);
         }
 
         /* --- MAIN EXPLORER GRID --- */
@@ -320,12 +335,14 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            gap: 10px;
         }
 
         .card-title {
             font-weight: 700;
             font-size: 1.1rem;
             color: var(--accent);
+            line-height: 1.3;
         }
 
         .module-tag {
@@ -335,6 +352,7 @@
             color: #0369a1;
             border-radius: 20px;
             font-weight: 600;
+            white-space: nowrap;
         }
 
         .tag-finance {
@@ -426,6 +444,7 @@
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease;
+            padding: 1rem; 
         }
 
         .modal-overlay.active {
@@ -435,7 +454,7 @@
 
         .modal-content {
             background: var(--surface);
-            width: 90%;
+            width: 100%;
             max-width: 700px;
             border-radius: 16px;
             padding: 2.5rem;
@@ -460,6 +479,7 @@
             font-weight: 700;
             color: var(--accent);
             margin-bottom: 0.5rem;
+            line-height: 1.2;
         }
 
         .modal-subtitle {
@@ -482,6 +502,18 @@
             font-size: 1.1rem;
             color: var(--text-main);
             line-height: 1.8;
+            word-break: break-word; 
+        }
+
+        /* NEW: Modal Description Style */
+        .modal-description {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px dashed var(--border);
+            font-size: 0.95rem;
+            color: var(--text-sec);
+            line-height: 1.6;
+            display: none; /* Hidden by default until we load a description */
         }
 
         .modal-note {
@@ -499,6 +531,7 @@
             display: flex;
             justify-content: flex-end;
             gap: 1rem;
+            flex-wrap: wrap; 
         }
 
         .btn {
@@ -508,6 +541,10 @@
             font-weight: 600;
             cursor: pointer;
             transition: background 0.2s;
+            flex: 1; 
+            max-width: 200px;
+            display: flex;
+            justify-content: center;
         }
 
         .btn-close {
@@ -532,17 +569,81 @@
             background: var(--primary-dark);
         }
 
-        @media (max-width: 600px) {
+        /* --- RESPONSIVE MOBILE ADJUSTMENTS --- */
+        @media (max-width: 768px) {
+            header {
+                padding: 0.75rem 0.75rem;
+                gap: 0.6rem;
+            }
+            .brand-container {
+                padding: 0;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.5rem;
+            }
+            .header-main {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            .brand-text h1 {
+                font-size: 1rem;
+            }
+            
+            .brand-logo {
+    width: 80px;   /* increase size here */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    border: 2px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.06);
+    display: block;
+}
+            .search-area {
+                margin-top: 0;
+                padding: 0 0.5rem 0.5rem 0.5rem;
+            }
+            .nav-inner {
+                padding: 0 1rem;
+            }
+            .container {
+                padding: 1rem;
+            }
             .grid {
                 grid-template-columns: 1fr;
             }
-
+            .card {
+                padding: 1.25rem;
+            }
+            .search-input {
+                padding: 12px 20px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .search-icon {
+                left: 12px;
+            }
+            .clear-search {
+                right: 12px;
+            }
             .modal-content {
                 padding: 1.5rem;
+                width: 100%;
             }
-
-            .brand-container {
-                padding: 0 10px;
+            .modal-title {
+                font-size: 1.25rem;
+            }
+            .modal-path {
+                font-size: 1rem;
+            }
+            .modal-actions {
+                flex-direction: column-reverse; 
+            }
+            .btn {
+                max-width: none;
+                width: 100%;
             }
         }
     </style>
@@ -550,38 +651,50 @@
 
 <body>
 
-    <header>
-        <div class="brand-container">
+<header>
+    <div class="brand-container">
+        <div class="header-main">
             <div class="brand">
-                <h1>ERP Guide <span>Beta</span></h1>
+                <img src="Images/logo.jpeg" alt="Logo" class="brand-logo">
+                <div class="brand-text">
+                    <br>
+                    <h1>.Net ERP Guide</h1>
+                    <span class="badge">Beta</span>
+                </div>
             </div>
-            <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
-                <svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
+            
+            
         </div>
 
-        <div class="search-container">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="searchInput" class="search-input" placeholder="Search for a task ">
-            <button class="clear-search" id="clearSearch" title="Clear search">✕</button>
+        <div class="search-area">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search tasks or modules...">
+                <button class="clear-search" id="clearSearch" title="Clear search">✕</button>
+            </div>
+
+            
         </div>
-    </header>
+
+        <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+                    <svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        
+    </div>
+</header>
 
     <div class="category-nav">
         <div class="nav-inner" id="categoryNav">
             <button class="cat-btn active" onclick="setCategory('All', this)">All</button>
-            <button class="cat-btn" onclick="setCategory('Master+Controls+Configuration', this)">Master Controls</button>
+
             <button class="cat-btn" onclick="setCategory('Day-to-Day Transactions', this)">Day to Day Transaction</button>
-            <button class="cat-btn" onclick="setCategory('Overall Query', this)">Overall Query</button>
-            <button class="cat-btn" onclick="setCategory('Overall Dashboard', this)">Overall Dashboard</button>
-            <button class="cat-btn" onclick="setCategory('Reports', this)">Reports</button>
+
         </div>
-        
-        <div class="sub-category-container" id="subItems">
-            </div>
     </div>
 
     <main class="container">
@@ -605,6 +718,7 @@
             </div>
             <div class="modal-body">
                 <div class="modal-path" id="modalPath"></div>
+                <div class="modal-description" id="modalDescription"></div>
             </div>
             <div id="modalNote" class="modal-note"></div>
             <div class="modal-actions">
@@ -620,33 +734,78 @@
         // --- 1. DATA ---
         const erpData = [
             {
-                title: "Gate Entry / Entry Delete / Vendor",
+                title: "Login to ERP",
                 category: "Day-to-Day Transactions",
-                subItem: "Stores", // ADDED SUB-ITEM
                 module: "Day-to-Day Transactions",
-                path: "Day-to-Day Transactions > Stores > Receipt(Item) > Gate Entry IN > Vendor",
-                note: "Remember to check the Tax Code before saving.",
-                imageURL: "Images/GateEntry.png"
+                path: "https://vision.ieverp.com:8443/ERP/WEB",
+                // Notice the HTML formatting for the numbered list here
+                description: "<strong>Process to Access the System:</strong><ol style='margin-left: 20px; margin-top: 8px;'><li>Open the above URL link in your web browser.</li><li>Select / Enter the company name VISIONINFRA LIVE 2526.</li><li>Enter your existing User ID.</li><li>Enter the same password that you use in the current ERP system.</li><li>Click on Login to access the new .NET ERP interface.</li></ol>",
+                note: "Remember to use your already existing credentials (Username, Password) to login.",
+                imageURL: "Images/login.png"
             },
             {
-                title: "Issue Item",
+                title: "Purchase Requisition (PR)",
                 category: "Day-to-Day Transactions",
-                subItem: "Stores", // ADDED SUB-ITEM
                 module: "Day-to-Day Transactions",
-                path: "Stores > Issue(Item) > General",
+                path: "Purchase → Indent → (Select As per Dept.) → Create",
+                description: "<p style='margin-bottom: 12px;'>User will create a Purchase Requisition for required materials or services. Mandatory details such as Item Description, Quantity, Required Date, Department, and Justification must be entered. After submission, the PR will move to the approval workflow.</p><strong>Transition Process (Standard Procedure):</strong><ol style='margin-left: 20px; margin-top: 8px;'><li>Select the Department.</li><li>Select the Document Date.</li><li>Enter the Employee / Operator Name.</li><li>Select the Location / Site Code.</li><li>Enter the CPC correctly as per the actual requirement.</li><li><strong>Narration:</strong> Provide proper justification, spare item life details, and any additional information required for approval. (Maximum 260 characters allowed).</li><li><strong>C-Hook:</strong> Select the required Asset and specify the Project / Site Location address.</li><li>Select the Item Code / Part Code.</li><li><strong>Due Date:</strong> Enter the required date when the material is needed at the site.</li><li><strong>Quantity:</strong> Enter the required quantity.</li><li>Click “+ Add Line Item” to add additional items, if required.</li><li>Click the Save button to record and submit the entry in the system.</li></ol>",
                 note: "Remember to check the Tax Code before saving.",
-                imageURL: "Images/IsseItem.png"
+                imageURL: "Images/pr.png"
             },
             {
-                title: "Add New Employee",
-                category: "Master+Controls+Configuration",
-                subItem: "HR", // ADDED SUB-ITEM
-                module: "HR",
-                path: "Main Menu > Human Resources > Personnel > Management > Add Employee",
-                note: "Employee ID is auto-generated.",
-                imageURL: "Images/IsseItem.png"
+                title: "Purchase Requisition Grid (Status Tracking)",
+                category: "Day-to-Day Transactions",
+                module: "Day-to-Day Transactions",
+                path: "Purchase → Indent → (Select As per Dept.)",
+                description: "Use this task to record items received at the gate from a vendor before they move to inventory. Ensure delivery quantities match the challan.<br><br><strong>Grid Features:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>This screen provides a grid view of all PR entries.</li><li>Users can Expand / Collapse records to check details.</li><li>Helps in tracking status: Pending, Approved, or Converted to PO.</li></ul><strong>Important Notes:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>The Purchase Grid search option is available on a universal basis for easy data search.</li><li>Expand All / Collapse All options are available as per requirement.</li><li><strong>Status Indicators:</strong><br>– <i>Unposted:</i> Approval Pending<br>– <i>Posted:</i> Approved</li><li>Once the Purchase Order (PO) is created, it will appear in the system grid for tracking.</li><li><strong>Export to Excel:</strong> Data can be exported in Excel format. (Note: Asset Code, Make, and Model details are currently under development).</li></ul>",
+                note: "Remember to check the Tax Code before saving.",
+                imageURL: "Images/prgrid.png"
             },
-            // ... (Rest of your data items)
+            {
+                title: "Purchase Requisition Approval Screen (Auto-Dash Board)",
+                category: "Day-to-Day Transactions",
+                module: "Day-to-Day Transactions",
+                path: "Auth Dashboard → Document Auth → (Select As per Dept.)",
+                description: "Use this task to record items received at the gate from a vendor before they move to inventory. Ensure delivery quantities match the challan.<br><br><strong>Approval Process:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>Authorized approvers can review PR details.</li><li>Approver may Approve / Reject / Send Back for Correction with remarks.</li><li>Once approved, the PR will be available for Purchase Order creation.</li></ul><strong>Grid Features:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>This screen provides a grid view of all PR entries.</li><li>Users can Expand / Collapse records to check details.</li><li>Helps in tracking status: Pending, Approved, or Converted to PO.</li></ul><strong>Important Notes:</strong><ol style='margin-left: 20px; margin-top: 8px;'><li><strong>System Provisions:</strong> Available options include Send Back, PR Authorization, and PR Print.</li><li><strong>Status Indicators:</strong><br>– <i>Unposted:</i> Approval Pending<br>– <i>Posted:</i> Approved</li><li><strong>Export to Excel:</strong> Data can be exported in Excel format. (Note: Asset Code, Make, and Model details are under development).</li><li><strong>Update:</strong> PR Edit Option at the Approval Level is currently unavailable. We are awaiting a response from the PCSOFT team and will share updates soon.</li></ol>",
+                note: "Remember to check the Tax Code before saving.",
+                imageURL: "Images/authdashboard.png"
+            },
+            {
+                title: "Purchase Order Display Grid",
+                category: "Day-to-Day Transactions",
+                module: "Day-to-Day Transactions",
+                path: "Auth Dashboard → Document Auth → (Select As per Dept.)",
+                description: "Use this task to record items received at the gate from a vendor before they move to inventory. Ensure delivery quantities match the challan.<br><br><strong>PO Tracking & Details:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>Displays all Purchase Orders generated against approved PRs.</li><li>Users can view details like Vendor, Item, Quantity, Rate, and Order Status.</li></ul><strong>Approval Process:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>Authorized approvers can review PR details.</li><li>Approver may Approve / Reject / Send Back for Correction with remarks.</li><li>Once approved, the PR will be available for Purchase Order creation.</li></ul><strong>Grid Features:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>The grid displays all Purchase Orders; users can Expand / Collapse records to check details.</li><li><strong>Universal Search:</strong> A search provision is available to filter data as per requirements.</li><li>Helps in tracking status: Pending, Approved, or Converted to PO.</li></ul><strong>Important Notes:</strong><ol style='margin-left: 20px; margin-top: 8px;'><li><strong>System Provisions:</strong> Available options include Send Back, PR Authorization, and PR Print.</li><li><strong>Status Indicators:</strong><br>– <i>Unposted:</i> Approval Pending<br>– <i>Posted:</i> Approved</li><li><strong>Development Status:</strong> PR Type–wise grids and full Excel export details (Asset Code, Make, Model) are currently under process and will be available soon.</li><li><strong>PR Edit Update:</strong> PR Edit Option at the Approval Level is currently unavailable while we await a response from the PCSOFT team.</li></ol>",
+                note: "Remember to check the Tax Code before saving.",
+                imageURL: "Images/pogrid.png"
+            },
+             {
+                title: "Gate Entry",
+                category: "Day-to-Day Transactions",
+                module: "Day-to-Day Transactions",
+                path: "store → gate entry",
+                description: "When material arrives at the site, the Gate Entry must be created in the system. Required details include PO Number, Vendor Name, Vehicle Details, Material Description, and Quantity received.<br><br><strong>Gate Entry Transition Process:</strong><ol style='margin-left: 20px; margin-top: 8px;'><li><strong>Document Details:</strong> Select the Department / Document Series and the Date as per the process date.</li><li><strong>Reference Type:</strong> Select <strong>PO (Purchase Order)</strong> only as the Reference Document Type.</li><li><strong>Vendor & Location:</strong> Select the Party / Vendor (as per supplier invoice) and the receiving Location.</li><li><strong>PO Selection:</strong> Select the relevant <strong>Reference Document Number</strong> (PO Number).</li><li><strong>Quantity:</strong> Select the PO line item, enter the actual received quantity, and click <strong>Save</strong>.</li><li><strong>Vendor/Invoice Details:</strong><ul style='margin-left: 20px; list-style-type: circle;'><li><i>Ref. No.:</i> Enter the Invoice Number.</li><li><i>Ref. Date:</i> Enter the Invoice Date.</li><li><i>Remarks:</i> Mention Asset Number, Site Location, or any other details required for the GRN process.</li></ul></li><li><strong>Finalize:</strong> Save the entry to complete the GRN / Gate Entry transition process.</li></ol><strong>Important System Notes:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Universal Search:</strong> A search provision is available to filter grid data as per requirements.</li><li><strong>Status Indicators:</strong> <i>Unposted</i> (Approval Pending) and <i>Posted</i> (Approved).</li><li><strong>Update:</strong> PR Type-wise grids and full Excel export details (Asset/Make/Model) are currently under development.</li></ul>",
+                note: "Remember to check the Tax Code before saving.",
+                imageURL: "Images/gateentr.png"
+            },
+            {
+                title: "Gate Entry Grid",
+                category: "Day-to-Day Transactions",
+                module: "Day-to-Day Transactions",
+                path: "store → gate entry",
+                description: "This screen provides a centralized list view of all gate entries recorded in the system. It serves as the primary tool for monitoring incoming material flow and verifying documentation.<br><br><strong>Grid Capabilities:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Entry Verification:</strong> Provides a comprehensive list view to verify pending or completed entries.</li><li><strong>PO Cross-Checking:</strong> Allows users to cross-check received material details against the original Purchase Order for accuracy.</li><li><strong>Status Tracking:</strong> Easily identify which consignments are at the gate, which are in the GRN process, and which are completed.</li></ul><strong>Grid Features:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Universal Search:</strong> Use the global search bar to quickly locate entries by Vendor Name, PO Number, or Invoice Number.</li><li><strong>Data Export:</strong> All visible grid data can be exported to Excel for reporting and external audits.</li><li><strong>Expandable Records:</strong> Click to expand individual rows to see item-level details without leaving the main list.</li></ul>",
+                note: "Remember to check the Tax Code before saving.",
+                imageURL: "Images/gateentrygrid.png"
+            },
+            {
+                title: "Goods Receipt Note (GRN)",
+                category: "Day-to-Day Transactions",
+                module: "Day-to-Day Transactions",
+                path: "store → GRN",
+                description: "The Goods Receipt Note (GRN) is the final step in the material inward process, officially acknowledging the receipt of goods into the company's inventory.<br><br><strong>Inventory Confirmation:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Physical Verification:</strong> Once material is physically inspected and verified at the site, the GRN is generated against the corresponding <strong>Gate Entry</strong> and <strong>Purchase Order</strong>.</li><li><strong>System Posting:</strong> Saving the GRN confirms the receipt of material and automatically updates the inventory stock levels.</li></ul><strong>Standard Procedure:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>Ensure that the quantity verified physically matches the quantity entered in the GRN.</li><li>All quality checks should be completed before finalized posting.</li><li>Linked documents (PO and Gate Entry) are automatically closed or updated upon successful GRN creation.</li></ul>",
+                note: "Remember to check the Tax Code before saving.",
+                imageURL: "Images/grn.png"
+            }
         ];
 
         // --- 2. DOM ELEMENTS ---
@@ -659,18 +818,17 @@
         const modalTitle = document.getElementById('modalTitle');
         const modalModule = document.getElementById('modalModule');
         const modalPath = document.getElementById('modalPath');
+        const modalDescription = document.getElementById('modalDescription'); // NEW
         const modalNote = document.getElementById('modalNote');
         const closeModalBtn = document.getElementById('closeModalBtn');
         const copyBtn = document.getElementById('copyBtn');
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
-        const subItemsDiv = document.getElementById('subItems');
 
         let currentCategory = 'All';
-        let currentSubFilter = 'All';
         yearSpan.textContent = new Date().getFullYear();
 
-        // --- 3. DARK MODE LOGIC (ORIGINAL) ---
+        // --- 3. DARK MODE LOGIC ---
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
             const isDark = document.body.classList.contains('dark-mode');
@@ -693,7 +851,7 @@
 
         themeToggle.addEventListener('click', toggleDarkMode);
 
-        // --- 4. HELPER FUNCTIONS (ORIGINAL) ---
+        // --- 4. HELPER FUNCTIONS ---
         function getModuleClass(moduleName) {
             const mod = moduleName.toLowerCase();
             if (mod.includes('finance')) return 'tag-finance';
@@ -707,31 +865,11 @@
             return steps.map(step => `<span class="step">${step}</span>`).join('');
         }
 
-        // --- 5. RENDER & FILTER LOGIC (UPDATED FOR DROPDOWN) ---
+        // --- 5. RENDER & FILTER LOGIC ---
         function setCategory(cat, btn) {
             currentCategory = cat;
-            currentSubFilter = 'All'; // Reset sub-filter
             document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            
-            // Handle Dropdown Logic
-            const relevantSubs = [...new Set(erpData.filter(i => i.category === cat && i.subItem).map(i => i.subItem))];
-            
-            if (relevantSubs.length > 0) {
-                subItemsDiv.style.display = 'flex';
-                subItemsDiv.innerHTML = `<button class="sub-btn" onclick="setSubFilter('All')">All ${cat}</button>`;
-                relevantSubs.forEach(s => {
-                    subItemsDiv.innerHTML += `<button class="sub-btn" onclick="setSubFilter('${s}')">${s}</button>`;
-                });
-            } else {
-                subItemsDiv.style.display = 'none';
-            }
-
-            applyFilters();
-        }
-
-        function setSubFilter(sub) {
-            currentSubFilter = sub;
             applyFilters();
         }
 
@@ -741,12 +879,11 @@
 
             const filteredData = erpData.filter(item => {
                 const matchesCategory = currentCategory === 'All' || item.category === currentCategory;
-                const matchesSub = currentSubFilter === 'All' || item.subItem === currentSubFilter;
                 const matchesSearch = item.title.toLowerCase().includes(searchTerm) ||
                     item.path.toLowerCase().includes(searchTerm) ||
                     item.module.toLowerCase().includes(searchTerm);
 
-                return matchesCategory && matchesSub && matchesSearch;
+                return matchesCategory && matchesSearch;
             });
 
             renderCards(filteredData);
@@ -780,13 +917,21 @@
             });
         }
 
-        // --- 6. MODAL LOGIC (ORIGINAL) ---
+        // --- 6. MODAL LOGIC ---
         let currentPathText = "";
         function openModal(item) {
             modalTitle.textContent = item.title;
             modalModule.textContent = item.category + " | " + item.module;
             modalPath.innerHTML = formatPath(item.path);
             currentPathText = item.path;
+
+            // NEW: Handle Description
+            if (item.description) {
+                modalDescription.innerHTML = `<strong>Description:</strong> ${item.description}`;
+                modalDescription.style.display = 'block';
+            } else {
+                modalDescription.style.display = 'none'; // Hide if no description exists
+            }
 
             if (item.note || item.imageURL) {
                 modalNote.style.display = 'block';
@@ -825,7 +970,7 @@
             });
         });
 
-        // --- 7. EVENT LISTENERS (ORIGINAL) ---
+        // --- 7. EVENT LISTENERS ---
         searchInput.addEventListener('input', applyFilters);
         clearSearchBtn.addEventListener('click', () => {
             searchInput.value = '';
@@ -833,6 +978,7 @@
             searchInput.focus();
         });
 
+        // Initial render
         renderCards(erpData);
     </script>
 </body>
