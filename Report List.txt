@@ -1,0 +1,534 @@
+Report List 											
+											
+Sl. NO	Dept.	Report types	Type of  Sub Report	Reports	Reports	Reports		Remarks	Report Path	ReMarks	
+1	Accounts	Chart of Codes	Accounts 	Code Wise 				GL Master	Report ? Accounts ? Accounts Report ? Chart of Code	"Group, Sub Group (Head with Colur Coding) wrt. Releated  Report FI & CO - TB, GEN, Ledger, )"	Done
+2	Accounts	Chart of Codes	Accounts 	Description Wise 				GL Master	Report ? Accounts ? Accounts Report ? Description Wise 	"Group, Sub Group (Head with Colur Coding) wrt. Releated  Report FI & CO - TB, GEN, Ledger, )"	Done
+3	Accounts	Chart of Codes	Sub Account	Code Wise 				Sub Accounts	Report ? Accounts ? Accounts Report ? Chart of Code 	"Group, Sub Group (Head with Colur Coding) wrt. Releated  Report FI & CO - TB, GEN, Ledger, )"	Done
+4	Accounts	Chart of Codes	Sub Account	Description Wise 				Sub Accounts	Report ? Accounts ? Accounts Report ? Description Wise 	"Group, Sub Group (Head with Colur Coding) wrt. Releated  Report FI & CO - TB, GEN, Ledger, )"	Done
+5	Accounts	Chart of Codes	Party	Code Wise  & Description Wise 	Debtor			Debitor List	Report ? Accounts ? Accounts Report ? Code /Description Wise  ?Debtor		Done
+6	Accounts	Chart of Codes	Party	Code Wise  & Description Wise 	Creditor			Creditor List	Report ? Accounts ? Accounts Report ? Code /Description Wise  ?Creditor		Done
+7	Accounts	Chart of Codes	Party	Code Wise  & Description Wise 	Party			Party List	Report ? Accounts ? Accounts Report ? Code /Description Wise  ?Party		Preview Not Open
+8	Accounts	Chart of Codes	Party	Code Wise  & Description Wise 	Employees 			Employees List	Report ? Accounts ? Accounts Report ? Code /Description Wise  ?Employees 		Done
+9	Accounts	Chart of Codes	Party	Code Wise  & Description Wise 	Non-Accounting			Non Accounting Party	Report ? Accounts ? Accounts Report ? Code /Description Wise  ?Non-Accounting		Done
+10	Accounts	Chart of Codes	Group Accounts					TB & Party Group	Report ? Accounts ? Accounts Report ? Code /Description Wise  ? Group Accounts 		Done
+11	Accounts	Chart of Codes	Item	"Code Wise,Description Wise & Class Wise "					Report ? Accounts ? Accounts Report ? Code /Description Wise/ Class Wise		Done
+12	Accounts	Accounts Ledger	General Ledger						Report ? Accounts ? Accounts Report ? Accounts Ledger ? General Ledger		Rmaining
+13	Accounts	Accounts Ledger	Sub-Account Ledger						Report ? Accounts ? Accounts Report ? Accounts Ledger ?Sub-Account Ledger		
+14	Accounts	Accounts Ledger	Party Ledger						Report ? Accounts ? Accounts Report ? Accounts Ledger ?Party Ledger		
+15	Accounts	Accounts Ledger	Employee Ledger						Report ? Accounts ? Accounts Report ? Accounts Ledger ?Employee Ledger		
+16	Accounts	Accounts Ledger	CPC Wise General Ledger						Report ? Accounts ? Accounts Report ? Accounts Ledger ?CPC Wise General Ledger		
+17	Accounts	Accounts Ledger	Account Intrest Calculation						Report ? Accounts ? Accounts Report ? Accounts Ledger ?Account Intrest Calculation		
+18	Accounts	Accounts Ledger	Party wise intrest Calculation						Report ? Accounts ? Accounts Report ? Accounts Ledger ?Party wise intrest Calculation		
+19	Accounts	Cash-Bank	Cash-Bank Book						Report ? Accounts ? Accounts Report ?Cash Bank ?Cash-Bank Book		
+20	Accounts	Cash-Bank	Payment-Receipt Statement						Report ? Accounts ? Accounts Report ?Cash Bank ?Payment-Receipt Statement		
+21	Accounts	Cash-Bank	Bank Reconciliation Statement	Internal					Report ? Accounts ? Accounts Report ?Cash Bank ?Bank Reconciliation Statement ?		
+22	Accounts	Cash-Bank	Bank Reconciliation Statement	External	Bank Statement Entry				Report ? Accounts ? Accounts Report ?Cash Bank ?Bank Reconciliation Statement ?External?Bank Statement Entry		
+23	Accounts	Cash-Bank	Bank Reconciliation Statement	External	Import From Excel				Report ? Accounts ? Accounts Report ?Cash Bank ?Bank Reconciliation Statement ?External?Import From Excel		
+24	Accounts	Cash-Bank	Bank Reconciliation Statement	External	Reconciliation Report				Report ? Accounts ? Accounts Report ?Cash Bank ?Bank Reconciliation Statement ?External?Reconciliation Report		
+25	Accounts	Cash-Bank	Bank Reconciliation Statement	External	FC-Reconciliation Report				Report ? Accounts ? Accounts Report ?Cash Bank ?Bank Reconciliation Statement ?External?FC-Reconciliation Report		
+26	Accounts	Cash-Bank	Bank Overdue Interest Statement						Report ? Accounts ? Accounts Report ?Cash Bank ?Bank Overdue Interest Statement		
+27	Accounts	Cash-Bank	Cheque Printing	Cheque Printing					Report ? Accounts ? Accounts Report ?Cash Bank ?Cheque Printing ?Cheque Printing		
+28	Accounts	Cash-Bank	Cheque Printing	Anexure Printing					Report ? Accounts ? Accounts Report ?Cash Bank ?Cheque Printing ?Anexure Printing		
+29	Accounts	Cash-Bank	Cheque Printing	Mising Cheque Numbers					Report ? Accounts ? Accounts Report ?Cash Bank ?Cheque Printing ?Mising Cheque Numbers		
+30	Accounts	Cash-Bank	Post-Dated-Cheque Module	Partywise Overdues					Report ? Accounts ? Accounts Report ?Cash Bank ?Post-Dated-Cheque Module ?Partywise Overdues		
+31	Accounts	Cash-Bank	Post-Dated-Cheque Module	Cheque-List not Printed					Report ? Accounts ? Accounts Report ?Cash Bank ?Post-Dated-Cheque Module ?Cheque-List not Printed		
+32	Accounts	Cash-Bank	Post-Dated-Cheque Module	Cheque-Slip Printing					Report ? Accounts ? Accounts Report ?Cash Bank ?Post-Dated-Cheque Module ?Cheque-Slip Printing		
+33	Accounts	Cash-Bank	Post-Dated-Cheque Module	Demand-Draft Advise Printing					Report ? Accounts ? Accounts Report ?Cash Bank ?Post-Dated-Cheque Module ?Demand-Draft Advise Printing		
+34	Accounts	Cash-Bank	Post-Dated-Cheque Module	Cheque Register					Report ? Accounts ? Accounts Report ?Cash Bank ?Post-Dated-Cheque Module ?Cheque Register		
+35	Accounts	Cash-Bank	Post-Dated-Cheque Module	Reprinting of Cheque					Report ? Accounts ? Accounts Report ?Cash Bank ?Post-Dated-Cheque Module ?Reprinting of Cheque		
+36	Accounts	Cash-Bank	Post-Dated-Cheque Module	PDC Register					Report ? Accounts ? Accounts Report ?Cash Bank ?Post-Dated-Cheque Module ?PDC Register		
+37	Accounts	Cash-Bank	All Bank Summary						Report ? Accounts ? Accounts Report ?Cash Bank ?All Bank Summary		
+38	Accounts	Cash-Bank	Cheque Book Register						Report ? Accounts ? Accounts Report ?Cash Bank ?Cheque Book Register		
+39	Accounts	Cash-Bank	Bankwise Receipt/Payment						Report ? Accounts ? Accounts Report ?Cash Bank ?Bankwise Receipt/Payment		
+40	Accounts	Cash-Bank	Electronic Funds Transfer						Report ? Accounts ? Accounts Report ?Cash Bank ?Electronic Funds Transfer		
+41	Accounts	Cash-Bank	Auto payment - Mail to Employee/Creditor						Report ? Accounts ? Accounts Report ?Cash Bank ?Auto payment - Mail to Employee/Creditor		
+42	Accounts	Cash-Bank	Cheque DisHonoured Register						Report ? Accounts ? Accounts Report ?Cash Bank ?Cheque DisHonoured Register		
+43	Accounts	Cash-Bank	TCS Provision 206C(1H)						Report ? Accounts ? Accounts Report ?Cash Bank ?TCS Provision 206C(1H)		
+44	Accounts	Purchase	Purchase Register						Report ? Accounts ? Accounts Report ?Purchase ?Purchase Register		
+45	Accounts	Purchase	Account by Party Purchase						Report ? Accounts ? Accounts Report ?Purchase ?Account by Party Purchase		
+46	Accounts	Purchase	Gross/Net Purchase						Report ? Accounts ? Accounts Report ?Purchase ?Gross/Net Purchase		
+47	Accounts	Purchase	Purchase Tax Forms						Report ? Accounts ? Accounts Report ?Purchase ?Purchase Tax Forms		
+48	Accounts	Purchase	Sub-Contractor Billing Register						Report ? Accounts ? Accounts Report ?Purchase ?Sub-Contractor Billing Register		
+49	Accounts	Purchase	Due Datewise LC Status						Report ? Accounts ? Accounts Report ?Purchase ?Due Datewise LC Status		
+50	Accounts	Purchase	Purchase Register GL wise						Report ? Accounts ? Accounts Report ?Purchase ?Purchase Register GL wise		
+51	Accounts	Purchase	Purchase Register with Vat % Bifurcation						Report ? Accounts ? Accounts Report ?Purchase ?Purchase Register with Vat % Bifurcation		
+52	Accounts	Purchase	Item Wise NonGst Purchase						Report ? Accounts ? Accounts Report ?Purchase ?Item Wise NonGst Purchase		
+53	Accounts	Purchase	Gst Input Tax Credit Details						Report ? Accounts ? Accounts Report ?Purchase ?Gst Input Tax Credit Details		
+54	Accounts	Purchase	Gst Input Tax Credit Details - RCM						Report ? Accounts ? Accounts Report ?Purchase ?Gst Input Tax Credit Details - RCM		
+55	Accounts	Purchase	Gst Only Non Acct Party						Report ? Accounts ? Accounts Report ?Purchase ?Gst Only Non Acct Party		
+56	Accounts	Sales	Sales Register						Report ? Accounts ? Accounts Report ?Sales ?Sales Register		
+57	Accounts	Sales	Account by Party Sale						Report ? Accounts ? Accounts Report ?Sales ?Account by Party Sale		
+58	Accounts	Sales	Gross/Net Sale						Report ? Accounts ? Accounts Report ?Sales ?Gross/Net Sale		
+59	Accounts	Sales	Sales Tax Forms						Report ? Accounts ? Accounts Report ?Sales ?Sales Tax Forms		
+60	Accounts	Sales	Bill Discounting Statement	Outstanding Discounted bills					Report ? Accounts ? Accounts Report ?Sales ?Bill Discounting Statement ?Outstanding Discounted bills		
+61	Accounts	Sales	Bill Discounting Statement	Reconcilation					Report ? Accounts ? Accounts Report ?Sales ?Bill Discounting Statement ?Reconcilation		
+62	Accounts	Sales	Bank Guarantee Statement						Report ? Accounts ? Accounts Report ?Sales ?Bank Guarantee Statement		
+63	Accounts	Sales	Sales Register GL wise						Report ? Accounts ? Accounts Report ?Sales ?Sales Register GL wise		
+64	Accounts	Sales	Sales Register with Vat % Bifurcation						Report ? Accounts ? Accounts Report ?Sales ?Sales Register with Vat % Bifurcation		
+65	Accounts	Sales	Cash Discount Report						Report ? Accounts ? Accounts Report ?Sales ?Cash Discount Report		
+66	Accounts	Sales	Gst Reconciliation for Sale Return						Report ? Accounts ? Accounts Report ?Sales ?Gst Reconciliation for Sale Return		
+67	Accounts	Sales	Kitty Account Details						Report ? Accounts ? Accounts Report ?Sales ?Kitty Account Details		
+68	Accounts	Sales	Cash Discount with Bills						Report ? Accounts ? Accounts Report ?Sales ?Cash Discount with Bills		
+69	Accounts	Party Statements	Outstanding & Ageing						Report ? Accounts ? Accounts Report ?Party Statements ?Outstanding & Ageing		
+70	Accounts	Party Statements	Bill By Bill Record						Report ? Accounts ? Accounts Report ?Party Statements ?Bill By Bill Record		
+71	Accounts	Party Statements	On-Account Statement						Report ? Accounts ? Accounts Report ?Party Statements ?On-Account Statement		
+72	Accounts	Party Statements	Payment-Receipt Statement						Report ? Accounts ? Accounts Report ?Party Statements ?Payment-Receipt Statement		
+73	Accounts	Party Statements	Purchase-Sales Statement						Report ? Accounts ? Accounts Report ?Party Statements ?Purchase-Sales Statement		
+74	Accounts	Party Statements	Advances Against Order						Report ? Accounts ? Accounts Report ?Party Statements ?Advances Against Order		
+75	Accounts	Party Statements	Pending Invoice Bills						Report ? Accounts ? Accounts Report ?Party Statements ?Pending Invoice Bills		
+76	Accounts	Party Statements	Payment Receipt History						Report ? Accounts ? Accounts Report ?Party Statements ?Payment Receipt History		
+77	Accounts	Party Statements	GL Bill by Bill Knocking	Bill by Bill					Report ? Accounts ? Accounts Report ?Party Statements ?GL Bill by Bill Knocking ? Bill by Bill		
+78	Accounts	Party Statements	GL Bill by Bill Knocking	Bill by Bill Outstanding					Report ? Accounts ? Accounts Report ?Party Statements ?GL Bill by Bill Knocking ? Bill by Bill Outstanding		
+79	Accounts	Party Statements	Yearly Outstanding & Ageing						Report ? Accounts ? Accounts Report ?Party Statements ?Yearly Outstanding & Ageing		
+80	Accounts	Party Statements	Employeewise Outstanding & Ageing						Report ? Accounts ? Accounts Report ?Party Statements ?Employeewise Outstanding & Ageing		
+81	Accounts	Fixed Assets	Schedule-E						Report ? Accounts ? Accounts Report ?Fixed Assets ?Schedule-E		
+82	Accounts	Fixed Assets	Fixed Asset Register						Report ? Accounts ? Accounts Report ?Fixed Assets ?Fixed Asset Register		
+83	Accounts	Fixed Assets	Asset Additions						Report ? Accounts ? Accounts Report ?Fixed Assets ?Asset Additions		
+84	Accounts	Fixed Assets	Asset Sold						Report ? Accounts ? Accounts Report ?Fixed Assets ?Asset Sold		
+85	Accounts	Fixed Assets	Write-Off Statement						Report ? Accounts ? Accounts Report ?Fixed Assets ?Write-Off Statement		
+86	Accounts	Fixed Assets	Income-Tax Blockwise Depreciation						Report ? Accounts ? Accounts Report ?Fixed Assets ?Income-Tax Blockwise Depreciation		
+87	Accounts	Fixed Assets	Capital Work In Progress Register						Report ? Accounts ? Accounts Report ?Fixed Assets ?Capital Work In Progress Register		
+88	Accounts	Fixed Assets	Inventory Items Used for Machine						Report ? Accounts ? Accounts Report ?Fixed Assets ?Inventory Items Used for Machine		
+89	Accounts	Fixed Assets	Import Duties of Capital Item						Report ? Accounts ? Accounts Report ?Fixed Assets ?Import Duties of Capital Item		
+90	Accounts	Fixed Assets	Exchange Gain/Loss on Capital Item						Report ? Accounts ? Accounts Report ?Fixed Assets ?Exchange Gain/Loss on Capital Item		
+91	Accounts	Fixed Assets	Asset-Bom FAR						Report ? Accounts ? Accounts Report ?Fixed Assets ?Asset-Bom FAR		
+92	Accounts	Fixed Assets	Shift Wise F.A. Usage						Report ? Accounts ? Accounts Report ?Fixed Assets ?Shift Wise F.A. Usage		
+93	Accounts	Fixed Assets	Profit/Loss On Sale Of Asset						Report ? Accounts ? Accounts Report ?Fixed Assets ?Profit/Loss On Sale Of Asset		
+94	Accounts	Fixed Assets	CWIP Account Reconciliation						Report ? Accounts ? Accounts Report ?Fixed Assets ?CWIP Account Reconciliation		
+95	Accounts	Fixed Assets	Fixed Asset Register with Details						Report ? Accounts ? Accounts Report ?Fixed Assets ?Fixed Asset Register with Details		
+96	Accounts	Fixed Assets	Fixed Asset Register Maprdval						Report ? Accounts ? Accounts Report ?Fixed Assets ?Fixed Asset Register Maprdval		
+97	Accounts	Trail Balance Group	General Ledger						Report ? Accounts ? Accounts Report ? Trail Balance Group ?General Ledger		
+98	Accounts	Trail Balance Group	Sub-Account Ledger						Report ? Accounts ? Accounts Report ? Trail Balance Group ?Sub-Account Ledger		
+99	Accounts	Trail Balance Group	Party Ledger						Report ? Accounts ? Accounts Report ? Trail Balance Group ?Party Ledger		
+100	Accounts	Trail Balance Group	Cash-Bank Book						Report ? Accounts ? Accounts Report ? Trail Balance Group ?Cash-Bank Book		
+101	Accounts	Trail Balance Group	Party Outstanding & Ageing						Report ? Accounts ? Accounts Report ? Trail Balance Group ?Party Outstanding & Ageing		
+102	Accounts	Trail Balance Group	Purchase Register						Report ? Accounts ? Accounts Report ? Trail Balance Group ?Purchase Register		
+103	Accounts	Trail Balance Group	Sales Register						Report ? Accounts ? Accounts Report ? Trail Balance Group ?Sales Register		
+104	Accounts	Trail Balance Group	CPC By G/L Summary						Report ? Accounts ? Accounts Report ? Trail Balance Group ?CPC By G/L Summary		
+105	Accounts	Trail Balance Group	Bill By Bill Record						Report ? Accounts ? Accounts Report ? Trail Balance Group ?Bill By Bill Record		
+106	Accounts	Trail Balance Group	Self Bal. JV Details						Report ? Accounts ? Accounts Report ? Trail Balance Group ?Self Bal. JV Details		
+107	Accounts	Trail Balance Group	Foreign Currency-Party Outstanding & Ageing						Report ? Accounts ? Accounts Report ? Trail Balance Group ?Foreign Currency-Party Outstanding & Ageing		
+108	Accounts	Trail Balance Group	All Bank Summary						Report ? Accounts ? Accounts Report ? Trail Balance Group ?All Bank Summary		
+109	Accounts	Foreign Currency	General Ledger						Report ? Accounts ? Accounts Report ?Foreign Currency ?General Ledger		
+110	Accounts	Foreign Currency	Sub-Account Ledger						Report ? Accounts ? Accounts Report ?Foreign Currency ?Sub-Account Ledger		
+111	Accounts	Foreign Currency	Party Ledger						Report ? Accounts ? Accounts Report ?Foreign Currency ?Party Ledger		
+112	Accounts	Foreign Currency	Employee Ledger						Report ? Accounts ? Accounts Report ?Foreign Currency ?Employee Ledger		
+113	Accounts	Foreign Currency	All Bank Summary						Report ? Accounts ? Accounts Report ?Foreign Currency ?All Bank Summary		
+114	Accounts	Foreign Currency	Party Outstanding & Ageing						Report ? Accounts ? Accounts Report ?Foreign Currency ?Party Outstanding & Ageing		
+115	Accounts	Foreign Currency	Cash-Bank Book						Report ? Accounts ? Accounts Report ?Foreign Currency ?Cash-Bank Book		
+116	Accounts	Foreign Currency	SoftEx FORM						Report ? Accounts ? Accounts Report ?Foreign Currency ?SoftEx FORM		
+117	Accounts	Foreign Currency	On-Account Statement						Report ? Accounts ? Accounts Report ?Foreign Currency ?On-Account Statement		
+118	Accounts	Foreign Currency	Payment-Receipt Statement						Report ? Accounts ? Accounts Report ?Foreign Currency ?Payment-Receipt Statement		
+119	Accounts	Foreign Currency	Import Bill Passing						Report ? Accounts ? Accounts Report ?Foreign Currency ?Import Bill Passing		
+120	Accounts	Foreign Currency	Purchase/Sale Statement						Report ? Accounts ? Accounts Report ?Foreign Currency ?Purchase/Sale Statement		
+121	Accounts	Foreign Currency	Bill By Bill Record						Report ? Accounts ? Accounts Report ?Foreign Currency ?Bill By Bill Record		
+122	Accounts	Foreign Currency	Exchange Gain/Loss JV						Report ? Accounts ? Accounts Report ?Foreign Currency ?Exchange Gain/Loss JV		
+123	Accounts	Foreign Currency	Party Receipt Fc History						Report ? Accounts ? Accounts Report ?Foreign Currency ?Party Receipt Fc History		
+124	Accounts	Order Control	Outstanding & Ageing						Report ? Accounts?Order Control?Outstanding & Ageing		
+125	Accounts	Fixed Assets (Master Based Dep.)	Fixed Asset Register 						Report ? Accounts?Fixed Assets (Master Based Dep.)?Fixed Asset Register 		
+126	Accounts	Fixed Assets (Master Based Dep.)	Asset BOM FAR						Report ? Accounts?Fixed Assets (Master Based Dep.)?Asset BOM FAR		
+127	Accounts	Fixed Assets (Master Based Dep.)	Profit/Loss On Sale Of Asset						Report ? Accounts?Fixed Assets (Master Based Dep.)?Profit/Loss On Sale Of Asset		
+128	Accounts	Credit Days							Report ? Accounts?Credit Days		
+129	Accounts	Employee Expenses							Report ? Accounts?Employee Expenses		
+130	Accounts	Travel Claim Report							Report ? Accounts?Travel Claim Report		
+131	Accounts	Expense Booking Report							Report ? Accounts?Expense Booking Report		
+132	Accounts	GST Inward Register							Report ? Accounts?GST Inward Register		
+133	Accounts	GST Reversal of advance reciept							Report ? Accounts?GST Reversal of advance reciept		
+134	Inventory	Status/Ledger Report	Inventory Status (Period)	Accepted Quantity					Report ?Inventory?Status/Ledger Report?Inventory Status (Period)?Accepted Quantity		
+135	Inventory	Status/Ledger Report	Inventory Status (Period)	Rejected Quantity					Report ?Inventory?Status/Ledger Report?Inventory Status (Period)?Rejected Quantity		
+136	Inventory	Status/Ledger Report	Inventory Status (Period)	Transit Quantity					Report ?Inventory?Status/Ledger Report?Inventory Status (Period)?Transit Quantity		
+137	Inventory	Status/Ledger Report	Inventory Status (Period)	Accepted Quantity(Optimized Beta version)					Report ?Inventory?Status/Ledger Report?Inventory Status (Period)?Accepted Quantity(Optimized Beta version)		
+138	Inventory	Status/Ledger Report	Sub-Contractor Item Ledger						Report ?Inventory?Status/Ledger Report?Sub-Contractor Item Ledger		
+139	Inventory	Status/Ledger Report	Item-Lot Ledger						Report ?Inventory?Status/Ledger Report?Item-Lot Le		
+140	Inventory	Status/Ledger Report	Inventory Statement For Bank	Detail					Report ?Inventory?Status/Ledger Report?Inventory Statement For Bank?Detail		
+141	Inventory	Status/Ledger Report	Inventory Statement For Bank	Summary					Report ?Inventory?Status/Ledger Report?Inventory Statement For Bank?Summary		
+142	Inventory	Status/Ledger Report	Inventory Statement For Bank	Ite group wise statement for bank(QTY)					Report ?Inventory?Status/Ledger Report?Inventory Statement For Bank?Ite group wise statement for bank(QTY)		
+143	Inventory	Status/Ledger Report	Non- Inventory Upto-Dt Status						Report ?Inventory?Status/Ledger Report?Non- Inventory Upto-Dt Status		
+144	Inventory	Status/Ledger Report	Bin	Bin Ledger					Report ?Inventory?Status/Ledger Report?Bin?Bin Ledger		
+145	Inventory	Status/Ledger Report	Bin	Pending For bining					Report ?Inventory?Status/Ledger Report?Bin?Pending For bining		
+146	Inventory	Status/Ledger Report	Bin	Lot wise Bin Ledger					Report ?Inventory?Status/Ledger Report?Bin?Lot wise Bin Ledger		
+147	Inventory	Status/Ledger Report	Lot BreakUp Code Ledger						Report ?Inventory?Status/Ledger Report?Lot BreakUp Code Ledger		
+148	Inventory	Status/Ledger Report	Access Type Ledger						Report ?Inventory?Status/Ledger Report?Access Type Ledger		
+149	Inventory	Status/Ledger Report	Batch Tracking Report						Report ?Inventory?Status/Ledger Report?Batch Tracking Report		
+150	Inventory	Status/Ledger Report	Receipt Issue Summary						Report ?Inventory?Status/Ledger Report?Receipt Issue Summary		
+151	Inventory	Status/Ledger Report	Item Partial Close						Report ?Inventory?Status/Ledger Report?Item Partial Close		
+152	Inventory	Status/Ledger Report	Item Lot wise Stock Report						Report ?Inventory?Status/Ledger Report?Item Lot wise Stock Report		
+153	Inventory	Purchase	Pending Purchase Requisition						Report ?Inventory?Purchase?Pending Purchase Requisition		
+154	Inventory	Purchase	Executed Purchase Requisition	Indent Wise					Report ?Inventory?Purchase?Executed Purchase Requisition?Indent Wise		
+155	Inventory	Purchase	Executed Purchase Requisition	Item Wise					Report ?Inventory?Purchase?Executed Purchase Requisition?Item Wise		
+156	Inventory	Purchase	Vendor-Quote Comparison.						Report ?Inventory?Purchase?Vendor-Quote Comparison.		
+157	Inventory	Purchase	Vendor Substitution						Report ?Inventory?Purchase?Vendor Substitution		
+158	Inventory	Purchase	Purchase Order Status.	Excuted					Report ?Inventory?Purchase?Purchase Order Status.?Excuted		
+159	Inventory	Purchase	Purchase Order Status.	Pending Quantity/ Pending Value	Party wise				Report ?Inventory?Purchase?Purchase Order Status.?Pending Quantity/ Pending Value?Party wise		
+160	Inventory	Purchase	Purchase Order Status.	Pending Quantity/ Pending Value	item wise				Report ?Inventory?Purchase?Purchase Order Status.?Pending Quantity/ Pending Value?item wise		
+161	Inventory	Purchase	Purchase Order Status.	Pending Quantity/ Pending Value	PO wise				Report ?Inventory?Purchase?Purchase Order Status.?Pending Quantity/ Pending Value?PO wise		
+162	Inventory	Purchase	Item P/O Rate Analysis.						Report ?Inventory?Purchase?Item P/O Rate Analysis.?		
+163	Inventory	Purchase	Purchase Order Amendment History						Report ?Inventory?Purchase?Purchase Order Amendment History		
+164	Inventory	Purchase	Order Executed History.	Order * Item Wise					Report ?Inventory?Purchase?Order Executed History.?Order * Item Wise		
+165	Inventory	Purchase	Order Executed History.	Party * Order Item Wise					Report ?Inventory?Purchase?Order Executed History.?Party * Order Item Wise		
+166	Inventory	Purchase	Items Received Without P.O.	Party					Report ?Inventory?Purchase?Items Received Without P.O.?Party		
+167	Inventory	Purchase	Items Received Without P.O.	Item 					Report ?Inventory?Purchase?Items Received Without P.O.?Item 		
+168	Inventory	Purchase	Items Under Inspection	Party (DC)/ GRN					Report ?Inventory?Purchase?Items Under Inspection?Party (DC)/ GRN		
+169	Inventory	Purchase	Items Under Inspection	C---->W					Report ?Inventory?Purchase?Items Under Inspection?C---->W		
+170	Inventory	Purchase	Items Inspection (Exception) Statement	Party					Report ?Inventory?Purchase?Items Inspection (Exception) Statement?Party		
+171	Inventory	Purchase	Items Inspection (Exception) Statement	Sub Contractor					Report ?Inventory?Purchase?Items Inspection (Exception) Statement?Sub Contractor		
+172	Inventory	Purchase	Purchase Quotation Status	Executed					Report ?Inventory?Purchase?Purchase Quotation Status?Executed		
+173	Inventory	Purchase	Purchase Quotation Status	Pending	Partywise				Report ?Inventory?Purchase?Purchase Quotation Status?Pending?Partywise		
+174	Inventory	Purchase	Purchase Quotation Status	Pending	Itemwise				Report ?Inventory?Purchase?Purchase Quotation Status?Pending?Itemwise		
+175	Inventory	Purchase	Vendor Receipt-Inspection Statement.						Report ?Inventory?Purchase?Vendor Receipt-Inspection Statement.		
+176	Inventory	Purchase	Item Purchase -(Party)						Report ?Inventory?Purchase?Item Purchase -(Party)		
+177	Inventory	Purchase	Party Sale/Purchase (Itemwise)						Report ?Inventory?Purchase?Party Sale/Purchase (Itemwise)		
+178	Inventory	Purchase	Purchase Rate Reconciliation						Report ?Inventory?Purchase?Purchase Rate Reconciliation		
+179	Inventory	Purchase	Item/Party Wise Vend Performance						Report ?Inventory?Purchase?Item/Party Wise Vend Performance		
+180	Inventory	Purchase	Pending P/O Schedule						Report ?Inventory?Purchase?Pending P/O Schedule		
+181	Inventory	Purchase	Purchase Return	PartyWise					Report ?Inventory?Purchase?Purchase Return?PartyWise		
+182	Inventory	Purchase	Purchase Return	Item Wise					Report ?Inventory?Purchase?Purchase Return?Item Wise		
+183	Inventory	Purchase	PO - Gin - Bill - Payment						Report ?Inventory?Purchase?PO - Gin - Bill - Payment		
+184	Inventory	Purchase	Supplimentary History						Report ?Inventory?Purchase?Supplimentary History		
+185	Inventory	Purchase	Inward Register						Report ?Inventory?Purchase?Inward Register		
+186	Inventory	Purchase	Pending For Qc Test						Report ?Inventory?Purchase?Pending For Qc Test		
+187	Inventory	Purchase	Schedule Execution						Report ?Inventory?Purchase?Schedule Execution		
+188	Inventory	Purchase	Purchase Register With Tax Details						Report ?Inventory?Purchase?Purchase Register With Tax Details		
+189	Inventory	Purchase	Rejection Report						Report ?Inventory?Purchase?Rejection Report		
+190	Inventory	Purchase	Overall Indent Status						Report ?Inventory?Purchase?Overall Indent Status		
+191	Inventory	Purchase	Goods In Transit Status						Report ?Inventory?Purchase?Goods In Transit Status		
+192	Inventory	Purchase	Purchase Register(Item)						Report ?Inventory?Purchase?Purchase Register(Item)		
+193	Inventory	Purchase	Transfer register (custom W/H to Normal W/H)						Report ?Inventory?Purchase?Transfer register (custom W/H to Normal W/H)		
+194	Inventory	Sales	Item-Price list						Report ?Inventory?Sales?Item-Price list		
+195	Inventory	Sales	Items Issued Without S/O	Party					Report ?Inventory?Sales?Items Issued Without S/O?Party		
+196	Inventory	Sales	Items Issued Without S/O	Item					Report ?Inventory?Sales?Items Issued Without S/O?Item		
+197	Inventory	Sales	Proforma-Invoice Printing	Proforma - Invoice printing (GST)					Report ?Inventory?Sales?Proforma-Invoice Printing?Proforma - Invoice printing (GST)		
+198	Inventory	Sales	A/R Following wrt Customer-GIN						Report ?Inventory?Sales?A/R Following wrt Customer-GIN		
+199	Inventory	Sales	Sale-Rate- Diff (Retros)						Report ?Inventory?Sales?Sale-Rate- Diff (Retros)		
+200	Inventory	Sales	Sale Vis-a-vis Costing	Detail					Report ?Inventory?Sales?Sale Vis-a-vis Costing?Detail		
+201	Inventory	Sales	Sale Vis-a-vis Costing	Summary					Report ?Inventory?Sales?Sale Vis-a-vis Costing?Summary		
+202	Inventory	Sales	Price Variation Report						Report ?Inventory?Sales?Price Variation Report		
+203	Inventory	Sales	Despatch Details						Report ?Inventory?Sales?Despatch Details		
+204	Inventory	Sales	Sales Return	Party Wise					Report ?Inventory?Sales?Sales Return?Party Wise		
+205	Inventory	Sales	Sales Return	Item Wise					Report ?Inventory?Sales?Sales Return?Item Wise		
+206	Inventory	Sales	Sales Enquiry						Report ?Inventory?Sales?Sales Enquiry		
+207	Inventory	Sales	Sales Order Amendment History						Report ?Inventory?Sales?Sales Order Amendment History		
+208	Inventory	Sales	Supplementary History						Report ?Inventory?Sales?Supplementary History		
+209	Inventory	Sales	Sales Vs Rejection						Report ?Inventory?Sales?Sales Vs Rejection		
+210	Inventory	Sales	Sale Rate Reconciliation						Report ?Inventory?Sales?Sale Rate Reconciliation		
+211	Inventory	Sales	Sales Order Status						Report ?Inventory?Sales?Sales Order Status		
+212	Inventory	Sales	Pending Dispatch Order						Report ?Inventory?Sales?Pending Dispatch Order		
+213	Inventory	Sales	Schedule Execution						Report ?Inventory?Sales?Schedule Execution		
+214	Inventory	Sales	Sale Register With Tax Details						Report ?Inventory?Sales?Sale Register With Tax Details		
+215	Inventory	Sales	Warranty Claim Report						Report ?Inventory?Sales?Warranty Claim Report		
+216	Inventory	Sales	Sale Vis-a-vis Profitability Report						Report ?Inventory?Sales?Sale Vis-a-vis Profitability Report		
+217	Inventory	Sales	SO Challan/ Invoice - Receipt						Report ?Inventory?Sales?SO Challan/ Invoice - Receipt		
+218	Inventory	Sales	Sales Register(Item)						Report ?Inventory?Sales?Sales Register(Item)		
+219	Inventory	Sales	W To W Remote Intransit						Report ?Inventory?Sales?W To W Remote Intransit		
+220	Inventory	Sales	------ More ------	SALES(LOT) --> BOM(LL) --> RM (IMP + DOM)					Report ?Inventory?Sales?------ More ------?SALES(LOT) --> BOM(LL) --> RM (IMP + DOM)		
+221	Inventory	Sales	------ More ------	Sale Order Stock Trasfer (WW)	Normal				Report ?Inventory?Sales?------ More ------?Sale Order Stock Trasfer (WW) ?  Normal		
+222	Inventory	Sales	------ More ------	Sale Order Stock Trasfer (WW)	Amendment				Report ?Inventory?Sales?------ More ------?Sale Order Stock Trasfer (WW) ? Amendment		
+223	Inventory	Sales	------ More ------	Sales order / FG Stock					Report ?Inventory?Sales?------ More ------?Sales order / FG Stock		
+224	Inventory	Analysis MIS	Inventory Ageing Analysis	Quantity					Report ?Inventory?Analysis MIS?Inventory Ageing Analysis?Quantity		
+225	Inventory	Analysis MIS	Inventory Ageing Analysis	Value					Report ?Inventory?Analysis MIS?Inventory Ageing Analysis?Value		
+226	Inventory	Analysis MIS	Inventory Ageing Analysis	Lot wise Quantity 					Report ?Inventory?Analysis MIS?Inventory Ageing Analysis?Lot wise Quantity 		
+227	Inventory	Analysis MIS	A-B-C Analysis						Report ?Inventory?Analysis MIS?A-B-C Analysis		
+228	Inventory	Analysis MIS	X-Y-Z Analysis						Report ?Inventory?Analysis MIS?X-Y-Z Analysis		
+229	Inventory	Analysis MIS	F-S-N Analysis						Report ?Inventory?Analysis MIS?F-S-N Analysis		
+230	Inventory	Analysis MIS	Retest Inventory						Report ?Inventory?Analysis MIS?Retest Inventory		
+231	Inventory	Analysis MIS	Stock Alert Report	Over Stock					Report ?Inventory?Analysis MIS?Stock Alert Report?Over Stock		
+232	Inventory	Analysis MIS	Stock Alert Report	Under Stock					Report ?Inventory?Analysis MIS?Stock Alert Report?Under Stock		
+233	Inventory	Analysis MIS	Item Re-Order Level						Report ?Inventory?Analysis MIS?Item Re-Order Level		
+234	Inventory	Analysis MIS	Test-Quantity Report						Report ?Inventory?Analysis MIS?Test-Quantity Report		
+235	Inventory	Analysis MIS	Production Statements						Report ?Inventory?Analysis MIS?Production Statements		
+236	Inventory	Analysis MIS	Vendor Performance / Rating	Vendor Perfromance details					Report ?Inventory?Analysis MIS?Vendor Performance / Rating?Vendor Perfromance details		
+237	Inventory	Analysis MIS	Vendor Performance / Rating	Vendor Rating					Report ?Inventory?Analysis MIS?Vendor Performance / Rating?Vendor Rating		
+238	Inventory	Analysis MIS	Vendor Performance / Rating	Letter to supplier					Report ?Inventory?Analysis MIS?Vendor Performance / Rating?Letter to supplier		
+239	Inventory	Transport Report	Destinationwise Daily Report						Report ?Inventory?Transport Report?Destinationwise Daily Report		
+240	Inventory	Transport Report	Contribution Report						Report ?Inventory?Transport Report?Contribution Report		
+241	Inventory	Transport Report	Monthwise Tonnage & Contribution Report						Report ?Inventory?Transport Report?Monthwise Tonnage & Contribution Report		
+242	Inventory	Transport Report	Pending LR List Monthwise						Report ?Inventory?Transport Report?Pending LR List Monthwise		
+243	Inventory	Transport Report	LR Register						Report ?Inventory?Transport Report?LR Register		
+244	Inventory	Transport Report	LR Party/SO Alteration						Report ?Inventory?Transport Report?LR Party/SO Alteration		
+245	Inventory	other Inv. Reports	L/R Report	L.R. Details					Report ?Inventory?other Inv. Reports?L/R Report ? L.R. Details		
+246	Inventory	other Inv. Reports	Value Added For Non-Gin	Detail					Report ?Inventory?other Inv. Reports?Value Added For Non-Gin ? Details		
+247	Inventory	other Inv. Reports	Value Added For Non-Gin	Summary					Report ?Inventory?other Inv. Reports?Value Added For Non-Gin ? Summary		
+248	Inventory	other Inv. Reports	Vendor Item Rate History						Report ?Inventory?other Inv. Reports?Vendor Item Rate History		
+249	Inventory	other Inv. Reports	Item* Period Valuation						Report ?Inventory?other Inv. Reports?Item* Period Valuation		
+250	Inventory	other Inv. Reports	Variance Gin & Bills						Report ?Inventory?other Inv. Reports?Variance Gin & Bills		
+251	Inventory	other Inv. Reports	Supplementary Bill Details						Report ?Inventory?other Inv. Reports?Supplementary Bill Details		
+252	Inventory	other Inv. Reports	"RM Report, Import & Indig."						"Report ?Inventory?other Inv. Reports?RM Report, Import & Indig."		
+253	Inventory	other Inv. Reports	Transportation Passed/Due Bills						Report ?Inventory?other Inv. Reports?Transportation Passed/Due Bills		
+254	Inventory	other Inv. Reports	Gen. Rcpt-Issue Register						Report ?Inventory?other Inv. Reports?Gen. Rcpt-Issue Register		
+255	Inventory	other Inv. Reports	Locationwise Transfer Report						Report ?Inventory?other Inv. Reports?Locationwise Transfer Report		
+256	Inventory	other Inv. Reports	Ccpwise Consumption Statement						Report ?Inventory?other Inv. Reports?Ccpwise Consumption Statement		
+257	Inventory	other Inv. Reports	OverAll Cost of Inventory Goods Produced						Report ?Inventory?other Inv. Reports?OverAll Cost of Inventory Goods Produced		
+258	Inventory	other Inv. Reports	Invoice wise Transporter Details						Report ?Inventory?other Inv. Reports?Invoice wise Transporter Details		
+259	Inventory	other Inv. Reports	Supplier Rejection Report						Report ?Inventory?other Inv. Reports?Supplier Rejection Report		
+260	Inventory	other Inv. Reports	Production Shortage v/s Packing List						Report ?Inventory?other Inv. Reports?Production Shortage v/s Packing List		
+261	Inventory	other Inv. Reports	Inventory Consumption Report						Report ?Inventory?other Inv. Reports?Inventory Consumption Report		
+262	Inventory	other Inv. Reports	GRN wise Import Details						Report ?Inventory?other Inv. Reports?GRN wise Import Details		
+263	Inventory	Costing	Landed Price						Report ?Inventory?Costing?Landed Price		
+264	Inventory	Costing	Indirect Item Cost						Report ?Inventory?Costing?Indirect Item Cost		
+265	Inventory	Service/Repair	In House Pending Repair  						Report ?Inventory?Service/Repair?In House Pending Repair  		
+266	Inventory	Service/Repair	Mfg Repair Pending Details  						Report ?Inventory?Service/Repair?Mfg Repair Pending Details  		
+267	Inventory	Service/Repair	Pending Complaint Report  						Report ?Inventory?Service/Repair?Pending Complaint Report  		
+268	Inventory	Service/Repair	Sales Order BackLog Report  						Report ?Inventory?Service/Repair?Sales Order BackLog Report  		
+269	Inventory	Service/Repair	Pump Ageing Report  						Report ?Inventory?Service/Repair?Pump Ageing Report  		
+270	Production	Poduction Report	Work Order	Work order vs Produced					Report ?Production?Poduction Report?Work Order?Work order vs Produced		
+271	Production	Poduction Report	Work Order	Work order Transaction History					Report ?Production?Poduction Report?Work Order?Work order Transaction History		
+272	Production	Poduction Report	Sales Order	Sales order schedule					Report ?Production?Poduction Report?Sales Order?Sales order schedule		
+273	Production	Poduction Report	Sales Order	Sales Order vs Sold					Report ?Production?Poduction Report?Sales Order?Sales Order vs Sold		
+274	Production	Poduction Report	Bill of Material	B-O-M Tree Structure					Report ?Production?Poduction Report?Bill of Material?B-O-M Tree Structure		
+275	Production	Poduction Report	Bill of Material	B-O-M Implosion					Report ?Production?Poduction Report?Bill of Material?B-O-M Implosion		
+276	Production	Poduction Report	Bill of Material	B-O-M Wise Stock Statement					Report ?Production?Poduction Report?Bill of Material?B-O-M Wise Stock Statement		
+277	Production	Poduction Report	Bill of Material	B-O-M Wise Item Shortage					Report ?Production?Poduction Report?Bill of Material?B-O-M Wise Item Shortage		
+278	Production	Poduction Report	Bill of Material	Inventory In Terms Of Production Days					Report ?Production?Poduction Report?Bill of Material?Inventory In Terms Of Production Days		
+279	Production	Poduction Report	Bill of Material	B-O-M V/S Actual					Report ?Production?Poduction Report?Bill of Material?B-O-M V/S Actual		
+280	Production	Poduction Report	Bill of Material	B-O-M With Share Of Business					Report ?Production?Poduction Report?Bill of Material?B-O-M With Share Of Business		
+281	Production	Poduction Report	Bill of Material	Production Variance Report					Report ?Production?Poduction Report?Bill of Material?Production Variance Report		
+282	Production	Poduction Report	Bill of Material	S/o. X BoM wise Stock Allocation with Shortages					Report ?Production?Poduction Report?Bill of Material?S/o. X BoM wise Stock Allocation with Shortages		
+283	Production	Poduction Report	Costing	Product Cost	As per Std. Rate				Report ?Production?Poduction Report?Costing?Product Cost?As per Std. Rate		
+284	Production	Poduction Report	Costing	Product Cost	As per Purchase Price List				Report ?Production?Poduction Report?Costing?Product Cost?As per Purchase Price List		
+285	Production	Poduction Report	Costing	Product Cost	Product Costing	Next Level 			Report ?Production?Poduction Report?Costing?Product Cost?Product Costing?Next Level 		
+286	Production	Poduction Report	Costing	Product Cost	Product Costing	Lowest level			Report ?Production?Poduction Report?Costing?Product Cost?Product Costing?Lowest level		
+287	Production	Poduction Report	Costing	Product Cost	Work Order Costing				Report ?Production?Poduction Report?Costing?Product Cost?Work Order Costing		
+288	Production	Poduction Report	Costing	Non Productive Cost					Report ?Production?Poduction Report?Costing?Non Productive Cost		
+289	Production	Poduction Report	Costing	Item Process Cost					Report ?Production?Poduction Report?Costing?Item Process Cost		
+290	Production	Poduction Report	Costing	Assembly Based Cost					Report ?Production?Poduction Report?Costing?Assembly Based Cost		
+291	Production	Poduction Report	MRP ||	Machine Log (Audit)					Report ?Production?Poduction Report?MRP ||?Machine Log (Audit)		
+292	Production	Poduction Report	MRP ||	Operator Log (Audit)					Report ?Production?Poduction Report?MRP ||?Operator Log (Audit)		
+293	Production	Poduction Report	MRP ||	Operator Machine Reconciliation					Report ?Production?Poduction Report?MRP ||?Operator Machine Reconciliation		
+294	Production	Poduction Report	MRP ||	Operator Efficiency					Report ?Production?Poduction Report?MRP ||?Operator Efficiency		
+295	Production	Poduction Report	MRP ||	Machine Utilisation					Report ?Production?Poduction Report?MRP ||?Machine Utilisation		
+296	Production	Poduction Report	MRP ||	Machine Wise Item Production					Report ?Production?Poduction Report?MRP ||?Machine Wise Item Production		
+297	Production	Poduction Report	Maintenance/Calibration	Calibration Schedule					Report ?Production?Poduction Report?Maintenance/Calibration?Calibration Schedule		
+298	Production	Poduction Report	Maintenance/Calibration	Standard Room Activity					Report ?Production?Poduction Report?Maintenance/Calibration?Standard Room Activity		
+299	Production	Poduction Report	Maintenance/Calibration	Machine Maintenance/Calibration					Report ?Production?Poduction Report?Maintenance/Calibration?Machine Maintenance/Calibration		
+300	Production	Poduction Report	Maintenance/Calibration	Machine Spares Listing					Report ?Production?Poduction Report?Maintenance/Calibration?Machine Spares Listing		
+301	Production	Poduction Report	Maintenance/Calibration	Spares Issued For Maintenance					Report ?Production?Poduction Report?Maintenance/Calibration?Spares Issued For Maintenance		
+302	Production	Poduction Report	Maintenance/Calibration	Preventive Maintenance Shedule					Report ?Production?Poduction Report?Maintenance/Calibration?Preventive Maintenance Shedule		
+303	Production	Poduction Report	Maintenance/Calibration	Maintenance Checkpoints					Report ?Production?Poduction Report?Maintenance/Calibration?Maintenance Checkpoints		
+304	Production	Poduction Report	Maintenance/Calibration	Machine History Card					Report ?Production?Poduction Report?Maintenance/Calibration?Machine History Card		
+305	Production	Poduction Report	Maintenance/Calibration	Breakdown Status Register					Report ?Production?Poduction Report?Maintenance/Calibration?Breakdown Status Register		
+306	Production	Poduction Report	Maintenance/Calibration	Breakdown & Maintenance History Card					Report ?Production?Poduction Report?Maintenance/Calibration?Breakdown & Maintenance History Card		
+307	Production	Poduction Report	Production MIS	Rejection/Rework codewise analysis					Report ?Production?Poduction Report?Production MIS?Rejection/Rework codewise analysis		
+308	Production	Poduction Report	Production MIS	Non Product codewise analysis					Report ?Production?Poduction Report?Production MIS?Non Product codewise analysis		
+309	Production	Poduction Report	Production MIS	Stores & Consumables Consumption					Report ?Production?Poduction Report?Production MIS?Stores & Consumables Consumption		
+310	Production	Poduction Report	Production MIS	Tonnage Reconciliation					Report ?Production?Poduction Report?Production MIS?Tonnage Reconciliation		
+311	Production	Poduction Report	Production MIS	Lot Tracking					Report ?Production?Poduction Report?Production MIS?Lot Tracking		
+312	Production	Poduction Report	Production MIS	Production indent status					Report ?Production?Poduction Report?Production MIS?Production indent status		
+313	Statutory	Statutory Reports	TDS	TDS Payable	Certificate (Form 16A)	Party			Report ?Statutory?TDS?TDS Payable?Certificate (Form 16A)?Party		
+314	Statutory	Statutory Reports	TDS	TDS Payable	Certificate (Form 16A)	Bill			Report ?Statutory?TDS?TDS Payable?Certificate (Form 16A)? Bill		
+315	Statutory	Statutory Reports	TDS	TDS Payable	Summary				Report ?Statutory?TDS?TDS Payable?Summary		
+316	Statutory	Statutory Reports	TDS	TDS Payable	TDS Challan Printing				Report ?Statutory?TDS?TDS Payable?TDS Challan Printing		
+317	Statutory	Statutory Reports	TCS	Certificate 206C					Report ?Statutory?TCS?Certificate 206C		
+318	Statutory	Statutory Reports	TCS	Challan Date Updation					Report ?Statutory?TCS?Challan Date Updation		
+319	Statutory	Statutory Reports	TCS	TCS Return Under(Form 27E)					Report ?Statutory?TCS?TCS Return Under(Form 27E)		
+320	Statutory	Statutory Reports	TCS	TCS Challan Printing					Report ?Statutory?TCS?TCS Challan Printing		
+321	Statutory	Statutory Reports	Work Contract Tax	Certificate					Report ?Statutory?Work Contract Tax?Certificate		
+322	Statutory	Statutory Reports	Work Contract Tax	Monthly Statement					Report ?Statutory?Work Contract Tax?Monthly Statement		
+323	Statutory	Statutory Reports	Work Contract Tax	Tax Register					Report ?Statutory?Work Contract Tax?Tax Register		
+324	Statutory	Statutory Reports	Work Contract Tax	Challan Date					Report ?Statutory?Work Contract Tax?Challan Date		
+325	Statutory	Statutory Reports	Import \ Export \ 100% EOU	B17 Bond Register					Report ?Statutory?Import \ Export \ 100% EOU?B17 Bond Register		
+326	Statutory	Statutory Reports	Import \ Export \ 100% EOU	CT3 Daily Register					Report ?Statutory?Import \ Export \ 100% EOU?CT3 Daily Register		
+327	Statutory	Statutory Reports	Import \ Export \ 100% EOU	ARE1					Report ?Statutory?Import \ Export \ 100% EOU?ARE1		
+328	Statutory	Statutory Reports	Import \ Export \ 100% EOU	ARE1					Report ?Statutory?Import \ Export \ 100% EOU?ARE1		
+329	Statutory	Statutory Reports	Import \ Export \ 100% EOU	DTA Register					Report ?Statutory?Import \ Export \ 100% EOU?DTA Register		
+330	Statutory	Statutory Reports	Import \ Export \ 100% EOU	Form ARE -3					Report ?Statutory?Import \ Export \ 100% EOU?Form ARE -3		
+331	Statutory	Statutory Reports	Import \ Export \ 100% EOU	100% EOU Reports	Receipts Under CT3				Report ?Statutory?Import \ Export \ 100% EOU?100% EOU Reports ?Receipts Under CT3		
+332	Statutory	Statutory Reports	Import \ Export \ 100% EOU	100% EOU Reports	Job Work Register				Report ?Statutory?Import \ Export \ 100% EOU?100% EOU Reports ?Job Work Register		
+333	Statutory	Statutory Reports	Import \ Export \ 100% EOU	100% EOU Reports	Capital Goods Import Ledger				Report ?Statutory?Import \ Export \ 100% EOU?100% EOU Reports ?Capital Goods Import Ledger		
+334	Statutory	Statutory Reports	Import \ Export \ 100% EOU	100% EOU Reports	Raw Material Import Ledger				Report ?Statutory?Import \ Export \ 100% EOU?100% EOU Reports ?Raw Material Import Ledger		
+335	Statutory	Statutory Reports	Import \ Export \ 100% EOU	Annexure - 63					Report ?Statutory?Import \ Export \ 100% EOU?Annexure - 63		
+336	Statutory	Statutory Reports	Import \ Export \ 100% EOU	Annexure - III					Report ?Statutory?Import \ Export \ 100% EOU?Annexure - III		
+337	Statutory	Statutory Reports	Import \ Export \ 100% EOU	Annexure - 21					Report ?Statutory?Import \ Export \ 100% EOU?Annexure - 21		
+338	Statutory	Statutory Reports	Import \ Export \ 100% EOU	Import / FORM A					Report ?Statutory?Import \ Export \ 100% EOU?Import / FORM A		
+339	Statutory	Statutory Reports	Import \ Export \ 100% EOU	IGCR Return Quaterly					Report ?Statutory?Import \ Export \ 100% EOU?IGCR Return Quaterly		
+340	Statutory	Statutory Reports	Import \ Export \ 100% EOU	Bond Register Month Wise					Report ?Statutory?Import \ Export \ 100% EOU?Bond Register Month Wise		
+341	Statutory	Statutory Reports	eReturn	TDS	    Regular				Report ?Statutory?eReturn?TDS ?    Regular		
+342	Statutory	Statutory Reports	eReturn	TDS	    Revised				Report ?Statutory?eReturn?TDS ?    Revised		
+343	Statutory	Statutory Reports	eReturn	TCS					Report ?Statutory?eReturn?TCS		
+344	Statutory	Statutory Reports	eReturn	e-Sale/e-Purchase					Report ?Statutory?eReturn?e-Sale/e-Purchase		
+345	Statutory	Statutory Reports	eReturn	e-CForm					Report ?Statutory?eReturn?e-CForm		
+346	Statutory	Statutory Reports	eReturn	Monthly Purchase/Sale Annexure					Report ?Statutory?eReturn?Monthly Purchase/Sale Annexure		
+347	Marketing	Marketing	Chart - of - Codes	Account	Code Wise  & Description Wise 				Report ?Marketing?Marketing?Chart - of - Codes?Account?Code Wise  & Description Wise 		
+348	Marketing	Marketing	Chart - of - Codes	Sub-Account	Code Wise  & Description Wise 				Report ?Marketing?Marketing?Chart - of - Codes?Sub-Account?Code Wise  & Description Wise 		
+349	Marketing	Marketing	Chart - of - Codes	Party	Code Wise  & Description Wise 				Report ?Marketing?Marketing?Chart - of - Codes?Party?Code Wise  & Description Wise 		
+350	Marketing	Marketing	Chart - of - Codes	Item	Code-Wise				Report ?Marketing?Marketing?Chart - of - Codes?Item?Code-Wise		
+351	Marketing	Marketing	Chart - of - Codes	Item	Description Wise				Report ?Marketing?Marketing?Chart - of - Codes?Item?Description Wise		
+352	Marketing	Marketing	Chart - of - Codes	Item	Class-Wise				Report ?Marketing?Marketing?Chart - of - Codes?Item?Class-Wise		
+353	Marketing	Marketing	Chart - of - Codes	Item	Fixtures				Report ?Marketing?Marketing?Chart - of - Codes?Item?Fixtures		
+354	Marketing	Marketing	Chart - of - Codes	Item	Gauges				Report ?Marketing?Marketing?Chart - of - Codes?Item?Gauges		
+355	Marketing	Marketing	Chart - of - Codes	Item	Tools				Report ?Marketing?Marketing?Chart - of - Codes?Item?Tools		
+356	Marketing	Marketing	Chart - of - Codes	Item	Maint-Spare				Report ?Marketing?Marketing?Chart - of - Codes?Item?Maint-Spare		
+357	Marketing	Marketing	Chart - of - Codes	Item	Fix-Spare				Report ?Marketing?Marketing?Chart - of - Codes?Item?Fix-Spare		
+358	Marketing	Marketing	Chart - of - Codes	Gr-Cd * A/C					Report ?Marketing?Marketing?Chart - of - Codes?Gr-Cd * A/C		
+359	Marketing	Marketing	Chart - of - Codes	Group * A/C					Report ?Marketing?Marketing?Chart - of - Codes?Group * A/C		
+360	Marketing	Marketing	Mailing - Labels	Debtor					Report ?Marketing?Marketing?Mailing - Labels?Debtor		
+361	Marketing	Marketing	Mailing - Labels	Creditor					Report ?Marketing?Marketing?Mailing - Labels?Creditor		
+362	Marketing	Marketing	Mailing - Labels	Party					Report ?Marketing?Marketing?Mailing - Labels?Party		
+363	Marketing	Marketing	Item - Sale	Cash					Report ?Marketing?Marketing?Item - Sale?Cash		
+364	Marketing	Marketing	Item - Sale	Credit 					Report ?Marketing?Marketing?Item - Sale?Credit 		
+365	Marketing	Marketing	Item - Sale - (Party)						Report ?Marketing?Marketing?Item - Sale - (Party)		
+366	Marketing	Marketing	Executed Sales Enquiry						Report ?Marketing?Marketing?Executed Sales Enquiry		
+367	Marketing	Marketing	Pending Sales Enquiry						Report ?Marketing?Marketing?Pending Sales Enquiry		
+368	Marketing	Marketing	Sale - Order Qty. Status						Report ?Marketing?Marketing?Sale - Order Qty. Status		
+369	Marketing	Marketing	Order Executed History	OrderItems-Wise					Report ?Marketing?Marketing?Order Executed History?OrderItems-Wise		
+370	Marketing	Marketing	Order Executed History	PartyOrder*Item-Wise					Report ?Marketing?Marketing?Order Executed History?PartyOrder*Item-Wise		
+371	Marketing	Marketing	Order Executed History	SO VS Dispatch Order					Report ?Marketing?Marketing?Order Executed History?SO VS Dispatch Order		
+372	Marketing	Marketing	Backlog Of Sale Orders	Item * Party					Report ?Marketing?Marketing?Backlog Of Sale Orders?Item * Party		
+373	Marketing	Marketing	Backlog Of Sale Orders	Party * Item					Report ?Marketing?Marketing?Backlog Of Sale Orders?Party * Item		
+374	Marketing	Marketing	Backlog Of Sale Orders	Party * Order					Report ?Marketing?Marketing?Backlog Of Sale Orders?Party * Order		
+375	Marketing	Marketing	Party - Cur - Yr - Pur/Sale						Report ?Marketing?Marketing?Party - Cur - Yr - Pur/Sale		
+376	Marketing	Marketing	Sale/Collection	Debtor					Report ?Marketing?Marketing?Sale/Collection?Debtor		
+377	Marketing	Marketing	Sale/Collection	Creditor					Report ?Marketing?Marketing?Sale/Collection?Creditor		
+378	Marketing	Marketing	Sale/Collection	Party					Report ?Marketing?Marketing?Sale/Collection?Party		
+379	Marketing	Marketing	Cumulative Sales						Report ?Marketing?Marketing?Cumulative Sales		
+380	Marketing	Marketing	Sales Organisation Reports	Outstanding & Ageing Report					Report ?Marketing?Marketing?Sales Organisation Reports?Outstanding & Ageing Report		
+381	Marketing	Marketing	Sales Organisation Reports	Sales Register					Report ?Marketing?Marketing?Sales Organisation Reports?Sales Register		
+382	Marketing	Marketing	Sales Organisation Reports	MIS For Sales Organisation					Report ?Marketing?Marketing?Sales Organisation Reports?MIS For Sales Organisation		
+383	Marketing	Marketing	Sales Organisation Reports	Sale Organisationwise Party Details					Report ?Marketing?Marketing?Sales Organisation Reports?Sale Organisationwise Party Details		
+384	Marketing	Marketing	Sales Organisation Reports	Sale/Collection	Debtors				Report ?Marketing?Marketing?Sales Organisation Reports?Sale/Collection?Debtors		
+385	Marketing	Marketing	Sales Organisation Reports	Sale/Collection	Party				Report ?Marketing?Marketing?Sales Organisation Reports?Sale/Collection?Party		
+386	Marketing	Marketing	Sales Organisation Reports	SOS Missing Party					Report ?Marketing?Marketing?Sales Organisation Reports?SOS Missing Party		
+387	Marketing	Marketing	Sales Organisation Reports	Party Ledger					Report ?Marketing?Marketing?Sales Organisation Reports?Party Ledger		
+388	Marketing	Marketing	Sales Activity						Report ?Marketing?Marketing?Sales Activity		
+389	Marketing	Marketing	Customer Delivery Performance						Report ?Marketing?Marketing?Customer Delivery Performance		
+390	Marketing	Marketing	Sales Target Vs Actual						Report ?Marketing?Marketing?Sales Target Vs Actual		
+391	Marketing	Marketing	BDM Sales Report						Report ?Marketing?Marketing?BDM Sales Report		
+392	Marketing	Marketing	Sales Quotation Status						Report ?Marketing?Marketing?Sales Quotation Status		
+393	Marketing	Marketing	Price Variance Report						Report ?Marketing?Marketing?Price Variance Report		
+394	Audit 	Audit Report	Analytical	Bank Cash-Credit Status					Report ?Audit ?Audit Report?Analytical?Bank Cash-Credit Status		
+395	Audit 	Audit Report	Analytical	Ratio Analysis					Report ?Audit ?Audit Report?Analytical?Ratio Analysis		
+396	Audit 	Audit Report	Analytical	Analysis Parameters					Report ?Audit ?Audit Report?Analytical?Analysis Parameters		
+397	Audit 	Audit Report	Analytical	GL * Class Reconciliation					Report ?Audit ?Audit Report?Analytical?GL * Class Reconciliation		
+398	Audit 	Audit Report	Analytical	Purchase Billwise Deduction					Report ?Audit ?Audit Report?Analytical?Purchase Billwise Deduction		
+399	Audit 	Audit Report	Analytical	Purchase Inventory Reconciliation					Report ?Audit ?Audit Report?Analytical?Purchase Inventory Reconciliation		
+400	Audit 	Audit Report	Satutory	TDS Payable	Certificate (Form 16A)	Party			Report ?Audit ?Audit Report?Satutory?TDS Payable?Certificate (Form 16A)?Party		
+401	Audit 	Audit Report	Satutory	TDS Payable	Certificate (Form 16A)	Bill			Report ?Audit ?Audit Report?Satutory?TDS Payable?Certificate (Form 16A)?Bill		
+402	Audit 	Audit Report	Satutory	TDS Payable	Summary	Party * Date	Regualr		Report ?Audit ?Audit Report?Satutory?TDS Payable?Summary?Party * Date?Regualr		
+403	Audit 	Audit Report	Satutory	TDS Payable	Summary	Party * Date	Revised		Report ?Audit ?Audit Report?Satutory?TDS Payable?Summary?Party * Date?Revised		
+404	Audit 	Audit Report	Satutory	TDS Payable	Summary	Party Forms			Report ?Audit ?Audit Report?Satutory?TDS Payable?Summary?Party Forms		
+405	Audit 	Audit Report	Satutory	TDS Payable	Summary	TDS%			Report ?Audit ?Audit Report?Satutory?TDS Payable?Summary?TDS%		
+406	Audit 	Audit Report	Satutory	TDS Payable	Summary	Date			Report ?Audit ?Audit Report?Satutory?TDS Payable?Summary?Date		
+407	Audit 	Audit Report	Satutory	TDS Payable	Summary				Report ?Audit ?Audit Report?Satutory?TDS Payable?Summary		
+408	Audit 	Audit Report	Satutory	TDS Payable	Summary				Report ?Audit ?Audit Report?Satutory?TDS Payable?Summary		
+409	Audit 	Audit Report	Satutory	TDS Payable	SC Purchase				Report ?Audit ?Audit Report?Satutory?TDS Payable?SC Purchase		
+410	Audit 	Audit Report	Satutory	TDS Payable	Deductions				Report ?Audit ?Audit Report?Satutory?TDS Payable?Deductions		
+411	Audit 	Audit Report	Satutory	TDS Payable	List Of Challans				Report ?Audit ?Audit Report?Satutory?TDS Payable?List Of Challans		
+412	Audit 	Audit Report	Satutory	TDS Payable	TDS Check List				Report ?Audit ?Audit Report?Satutory?TDS Payable?TDS Check List		
+413	Audit 	Audit Report	Satutory	TDS Recievable	TDS Certificate Status				Report ?Audit ?Audit Report?Satutory?TDS Recievable?TDS Certificate Status		
+414	Audit 	Audit Report	Satutory	TDS Recievable	TDS Datewise Report				Report ?Audit ?Audit Report?Satutory?TDS Recievable?TDS Datewise Report		
+415	Audit 	Audit Report	Satutory	TDS Recievable	TDS Receivable (JV Based)				Report ?Audit ?Audit Report?Satutory?TDS Recievable?TDS Receivable (JV Based)		
+416	Audit 	Audit Report	Satutory	TDS Recievable	TDS Receivable (A/c Based)				Report ?Audit ?Audit Report?Satutory?TDS Recievable?TDS Receivable (A/c Based)		
+417	Audit 	Audit Report	Satutory	Works Contract	Certificate				Report ?Audit ?Audit Report?Satutory?Works Contract?Certificate		
+418	Audit 	Audit Report	Satutory	Works Contract	Monthly Statement				Report ?Audit ?Audit Report?Satutory?Works Contract?Monthly Statement		
+419	Audit 	Audit Report	Satutory	Works Contract	Tax Register				Report ?Audit ?Audit Report?Satutory?Works Contract?Tax Register		
+420	Audit 	Audit Report	Satutory	Works Contract	Challan-Date				Report ?Audit ?Audit Report?Satutory?Works Contract?Challan-Date		
+421	Audit 	Audit Report	Satutory	Works Contract	Check List				Report ?Audit ?Audit Report?Satutory?Works Contract?Check List		
+422	Audit 	Audit Report	Satutory	Tax collection at source	Certificate 206C				Report ?Audit ?Audit Report?Satutory?Tax collection at source?Certificate 206C		
+423	Audit 	Audit Report	Satutory	Tax collection at source	TCS CheckList				Report ?Audit ?Audit Report?Satutory?Tax collection at source?TCS CheckList		
+424	Audit 	Audit Report	Satutory	Tax collection at source	Certificate Issue Date Updation				Report ?Audit ?Audit Report?Satutory?Tax collection at source?Certificate Issue Date Updation		
+425	Audit 	Audit Report	Satutory	Tax collection at source	Challan Date Updation				Report ?Audit ?Audit Report?Satutory?Tax collection at source?Challan Date Updation		
+426	Audit 	Audit Report	Satutory	Tax collection at source	TCS Return Under (FORM 27E)				Report ?Audit ?Audit Report?Satutory?Tax collection at source?TCS Return Under (FORM 27E)		
+427	Audit 	Audit Report	Satutory	Tax collection at source	TCS Challan Printing				Report ?Audit ?Audit Report?Satutory?Tax collection at source?TCS Challan Printing		
+428	Audit 	Audit Report	Satutory	Reimbursement of CST					Report ?Audit ?Audit Report?Satutory?Reimbursement of CST		
+429	Audit 	Audit Report	Satutory	Section 301 Register					Report ?Audit ?Audit Report?Satutory?Section 301 Register		
+430	Audit 	Audit Report	Purchase	Pending Bills for Receipts					Report ?Audit ?Audit Report?Purchase?Pending Bills for Receipts		
+431	Audit 	Audit Report	Purchase	Vendor Bill Passing Status					Report ?Audit ?Audit Report?Purchase?Vendor Bill Passing Status		
+432	Audit 	Audit Report	Purchase	Bill Passing Exception					Report ?Audit ?Audit Report?Purchase?Bill Passing Exception		
+433	Audit 	Audit Report	Purchase	Auxiliary Bill Passing Status					Report ?Audit ?Audit Report?Purchase?Auxiliary Bill Passing Status		
+434	Audit 	Audit Report	Purchase	Purchase Tax Summary					Report ?Audit ?Audit Report?Purchase?Purchase Tax Summary		
+435	Audit 	Audit Report	Purchase	Tax Code wise Purchases					Report ?Audit ?Audit Report?Purchase?Tax Code wise Purchases		
+436	Audit 	Audit Report	Sale	Pending Bills for Issues					Report ?Audit ?Audit Report?Sale?Pending Bills for Issues		
+437	Audit 	Audit Report	Sale	Customer Invoice Passing Status					Report ?Audit ?Audit Report?Sale?Customer Invoice Passing Status		
+438	Audit 	Audit Report	Sale	Bill Passing Exception					Report ?Audit ?Audit Report?Sale?Bill Passing Exception		
+439	Audit 	Audit Report	Sale	Sale Tax Summary					Report ?Audit ?Audit Report?Sale?Sale Tax Summary		
+440	Audit 	Audit Report	Sale	CST Return cum Chalan-Form III (B)					Report ?Audit ?Audit Report?Sale?CST Return cum Chalan-Form III (B)		
+441	Audit 	Audit Report	Sale	Form 403					Report ?Audit ?Audit Report?Sale?Form 403		
+442	Audit 	Audit Report	Sale	Tax Code wise Sales					Report ?Audit ?Audit Report?Sale?Tax Code wise Sales		
+443	Audit 	Audit Report	Sale	TCS Deduction Report					Report ?Audit ?Audit Report?Sale?TCS Deduction Report		
+444	Audit 	Audit Report	Sale	Auxiliary Bill Passing Status					Report ?Audit ?Audit Report?Sale?Auxiliary Bill Passing Status		
+445	Audit 	Audit Report	Other	Inventory Item Rate					Report ?Audit ?Audit Report?Other?Inventory Item Rate		
+446	Audit 	Audit Report	Other	Periodic Valuation Report					Report ?Audit ?Audit Report?Other?Periodic Valuation Report		
+447	Audit 	Audit Report	Other	Consumption Statement					Report ?Audit ?Audit Report?Other?Consumption Statement		
+448	Audit 	Audit Report	Other	Operator Statistics					Report ?Audit ?Audit Report?Other?Operator Statistics		
+449	Audit 	Audit Report	Other	Pending For Authorisation					Report ?Audit ?Audit Report?Other?Pending For Authorisation		
+450	Audit 	Audit Report	Other	Missing Document Nos					Report ?Audit ?Audit Report?Other?Missing Document Nos		
+451	Audit 	Audit Report	Other	User Role Rights					Report ?Audit ?Audit Report?Other?User Role Rights		
+452	Audit 	Audit Report	Other	Role Rights Changed Log					Report ?Audit ?Audit Report?Other?Role Rights Changed Log		
+453	Audit 	Audit Report	Other	Missing TaxCode					Report ?Audit ?Audit Report?Other?Missing TaxCode		
+454	Audit 	Audit Report	Other	User Log Sheet					Report ?Audit ?Audit Report?Other?User Log Sheet		
+455	Audit 	Audit Report	Other	Userwise Authorisation					Report ?Audit ?Audit Report?Other?Userwise Authorisation		
+456	Audit 	Audit Report	Other	Pending For Authorisation (USER)					Report ?Audit ?Audit Report?Other?Pending For Authorisation (USER)		
+457	Audit 	Audit Report	Other	UserWise ERP Utilization					Report ?Audit ?Audit Report?Other?UserWise ERP Utilization		
+458	Audit 	Audit Report	Other	E Invoice Details					Report ?Audit ?Audit Report?Other?E Invoice Details		
+459	Audit 	Audit Report	Other	Self Balancing JV(Audit)					Report ?Audit ?Audit Report?Other?Self Balancing JV(Audit)		
+460	Audit 	Audit Report	Other	Inventory unauthorised					Report ?Audit ?Audit Report?Other?Inventory unauthorised		
+461	Audit 	Audit Report	Other	Document Attachment List					Report ?Audit ?Audit Report?Other?Document Attachment List		
+462	Audit 	Audit Report	Other	Doc Date < Ref. Date < Captured Date					Report ?Audit ?Audit Report?Other?Doc Date < Ref. Date < Captured Date		
+463	Audit 	Audit Report	Other	Audit Log Mandatory					Report ?Audit ?Audit Report?Other?Audit Log Mandatory		
+464	Audit 	Audit Report	Other	User * Role Log					Report ?Audit ?Audit Report?Other?User * Role Log		
+465	Finance	Finance Report	Satutory	Trial Balance					Report ?Finance?Finance Report?Satutory?Trial Balance		
+466	Finance	Finance Report	Satutory	Provision Trial Balance					Report ?Finance?Finance Report?Satutory?Provision Trial Balance		
+467	Finance	Finance Report	Satutory	Profit & Loss Statement					Report ?Finance?Finance Report?Satutory?Profit & Loss Statement		
+468	Finance	Finance Report	Satutory	Divisional P&L Statement					Report ?Finance?Finance Report?Satutory?Divisional P&L Statement		
+469	Finance	Finance Report	Satutory	Balance-Sheet					Report ?Finance?Finance Report?Satutory?Balance-Sheet		
+470	Finance	Finance Report	Satutory	Trial Balance (Including Sub-A/C)					Report ?Finance?Finance Report?Satutory?Trial Balance (Including Sub-A/C)		
+471	Finance	Finance Report	M.I.S	Cash-Flow Forecast					Report ?Finance?Finance Report?M.I.S?Cash-Flow Forecast		
+472	Finance	Finance Report	M.I.S	Cash-Flow Projection					Report ?Finance?Finance Report?M.I.S?Cash-Flow Projection		
+473	Finance	Finance Report	M.I.S	Fund-Flow Statement					Report ?Finance?Finance Report?M.I.S?Fund-Flow Statement		
+474	Finance	Finance Report	M.I.S	Cash-Flow Statement					Report ?Finance?Finance Report?M.I.S?Cash-Flow Statement		
+475	Finance	Finance Report	M.I.S	Item-Class P&L Statement					Report ?Finance?Finance Report?M.I.S?Item-Class P&L Statement		
+476	Finance	Finance Report	Group Based	Trial Balance					Report ?Finance?Finance Report?Group Based?Trial Balance	Add in Sub Account Report in SP Group Based ( wrt Group Head)	
+477	Finance	Finance Report	Group Based	Profit & Loss Statement					Report ?Finance?Finance Report?Group Based?Profit & Loss Statement		
+478	Finance	Finance Report	Group Based	Balance-Sheet					Report ?Finance?Finance Report?Group Based?Balance-Sheet		
+479	Finance	Finance Report	Group Based	Schedule Report					Report ?Finance?Finance Report?Group Based?Schedule Report		
+480	Finance	Finance Report	Group Based	Cash Flow Statement					Report ?Finance?Finance Report?Group Based?Cash Flow Statement		
+481	Finance	Finance Report	Group Based	Budget v/s Actual					Report ?Finance?Finance Report?Group Based?Budget v/s Actual		
+482	Finance	Finance Report	Group Based	Divisional P&L Statement					Report ?Finance?Finance Report?Group Based?Divisional P&L Statement		
+483	Finance	Finance Report	Group Based	Fund Flow Statement					Report ?Finance?Finance Report?Group Based?Fund Flow Statement		
+484	Finance	Finance Report	Trail Balanced Group	Trial Balance					Report ?Finance?Finance Report?Trail Balanced Group?Trial Balance		
+485	Finance	Finance Report	Trail Balanced Group	Profit & Loss Statement					Report ?Finance?Finance Report?Trail Balanced Group?Profit & Loss Statement		
+486	Finance	Finance Report	Trail Balanced Group	Balance-Sheet					Report ?Finance?Finance Report?Trail Balanced Group?Balance-Sheet		
+487	Finance	Finance Report	Trail Balanced Group	Trial Balance (Including Sub-A/C)					Report ?Finance?Finance Report?Trail Balanced Group?Trial Balance (Including Sub-A/C)		
+488	Finance	Finance Report	Trail Balanced Group	Group Based	Trial Balance				Report ?Finance?Finance Report?Trail Balanced Group?Group Based?Trial Balance		
+489	Finance	Finance Report	Trail Balanced Group	Group Based	Profit & Loss Statement				Report ?Finance?Finance Report?Trail Balanced Group?Group Based?Profit & Loss Statement		
+490	Finance	Finance Report	Trail Balanced Group	Group Based	Balance-Sheet				Report ?Finance?Finance Report?Trail Balanced Group?Group Based?Balance-Sheet		
+491	Finance	Finance Report	Trail Balanced Group	Group Based	Schedule Report				Report ?Finance?Finance Report?Trail Balanced Group?Group Based?Schedule Report		
+492	Finance	Finance Report	Trail Balanced Group	Group Based	Cash Flow Statement				Report ?Finance?Finance Report?Trail Balanced Group?Group Based?Cash Flow Statement		
+493	Finance	Finance Report	Trail Balanced Group	Cash Flow Statement					Report ?Finance?Finance Report?Trail Balanced Group?Cash Flow Statement		
+494	Finance	Finance Report	Trail Balanced Group	Fund Flow Statement					Report ?Finance?Finance Report?Trail Balanced Group?Fund Flow Statement		
+495	Finance	Finance Report	Budget	Budget v/s Actual	Account Codewise				Report ?Finance?Finance Report?Budget?Budget v/s Actual?Account Codewise		
+496	Finance	Finance Report	Budget	Over Budget Expenses Statement					Report ?Finance?Finance Report?Budget?Over Budget Expenses Statement		
+497	Finance	Finance Report	Budget	Budget/Account Details					Report ?Finance?Finance Report?Budget?Budget/Account Details		
+498	Export	Export	Certificate Of Origin						Report ?Export?Export?Certificate Of Origin		
+499	Export	Export	Packing Slip						Report ?Export?Export?Packing Slip		
+500	Export	Export	Shipping Bill / Bill Of Export						Report ?Export?Export?Shipping Bill / Bill Of Export		
+501	Export	Export	Proforma-Invoice						Report ?Export?Export?Proforma-Invoice		
+502	Export	Export	G.S.P						Report ?Export?Export?G.S.P		
+503	Export	Export	ARE1	Export 					Report ?Export?Export?ARE1?Export 		
+504	Export	Export	ARE1	Domestics					Report ?Export?Export?ARE1?Domestics		
+505	Export	Export	Bank Certificate						Report ?Export?Export?Bank Certificate		
+506	Export	Export	Daily Stock Register						Report ?Export?Export?Daily Stock Register		
+507	Export	Export	CT3 Register						Report ?Export?Export?CT3 Register		
+508	Export	Export	B17 / LUT / UT1 Bond Register						Report ?Export?Export?B17 / LUT / UT1 Bond Register		
+509	Export	Export	Stock Register For Capital Goods						Report ?Export?Export?Stock Register For Capital Goods		
+510	Export	Export	Daily Waste Register						Report ?Export?Export?Daily Waste Register		
+511	Export	Export	DTA Register						Report ?Export?Export?DTA Register		
+512	Export	Export	Export Register						Report ?Export?Export?Export Register		
+513	Export	Export	Finished Product Register						Report ?Export?Export?Finished Product Register		
+514	Export	Export	AR-3A	Export 					Report ?Export?Export?AR-3A?Export 		
+515	Export	Export	AR-3A	100% EOU 					Report ?Export?Export?AR-3A?100% EOU 		
+516	Export	Export	CT3 Daily Register						Report ?Export?Export?CT3 Daily Register		
+517	Export	Export	Form ARE-3	Export 					Report ?Export?Export?Form ARE-3?Export 		
+518	Export	Export	Form ARE-3	Domestics					Report ?Export?Export?Form ARE-3?Domestics		
+519	Export	Export	100% EOU Reports	D3 Register					Report ?Export?Export?100% EOU Reports?D3 Register		
+520	Export	Export	100% EOU Reports	Job Work Register					Report ?Export?Export?100% EOU Reports?Job Work Register		
+521	Export	Export	100% EOU Reports	Capital Goods Import Ledger					Report ?Export?Export?100% EOU Reports?Capital Goods Import Ledger		
+522	Export	Export	100% EOU Reports	Raw Material Import Ledger					Report ?Export?Export?100% EOU Reports?Raw Material Import Ledger		
+523	Export	Export	Annexure 19						Report ?Export?Export?Annexure 19		
+524	Export	Export	ARE2						Report ?Export?Export?ARE2		
+525	Export	Export	CT1 Register						Report ?Export?Export?CT1 Register		
+526	Export	Export	CT2 Register						Report ?Export?Export?CT2 Register		
+527	Export	Export	Export Promotion Scheme	ANF-4F					Report ?Export?Export?Export Promotion Scheme?ANF-4F		
+528	Export	Export	Export Promotion Scheme	Import Details					Report ?Export?Export?Export Promotion Scheme?Import Details		
+529	Export	Export	Export Promotion Scheme	Export Details					Report ?Export?Export?Export Promotion Scheme?Export Details		
+530	Export	Export	Export Promotion Scheme	Appendix 4H					Report ?Export?Export?Export Promotion Scheme?Appendix 4H		
+531	Export	Export	Closing Bond Balance of Duty						Report ?Export?Export?Closing Bond Balance of Duty		
