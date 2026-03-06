@@ -17,7 +17,7 @@ const erpData = [
         path: "Purchase → Indent → (Select As per Dept.) → Create",
         description: "<p style='margin-bottom: 12px;'>User will create a Purchase Requisition for required materials or services. Mandatory details such as Item Description, Quantity, Required Date, Department, and Justification must be entered. After submission, the PR will move to the approval workflow.</p><strong>Transition Process (Standard Procedure):</strong><ol style='margin-left: 20px; margin-top: 8px;'><li>Select the Department.</li><li>Select the Document Date.</li><li>Enter the Employee / Operator Name.</li><li>Select the Location / Site Code.</li><li>Enter the CPC correctly as per the actual requirement.</li><li><strong>Narration:</strong> Provide proper justification, spare item life details, and any additional information required for approval. (Maximum 260 characters allowed).</li><li><strong>C-Hook:</strong> Select the required Asset and specify the Project / Site Location address.</li><li>Select the Item Code / Part Code.</li><li><strong>Due Date:</strong> Enter the required date when the material is needed at the site.</li><li><strong>Quantity:</strong> Enter the required quantity.</li><li>Click “+ Add Line Item” to add additional items, if required.</li><li>Click the Save button to record and submit the entry in the system.</li></ol>",
         note: "Ensure the 'Narration' includes the specific Asset Code if the request is for a machine repair to speed up approval.",
-        imageURL: "Images/pr.png"
+        imageURL: "/Images/AssetCode.png"
     },
     {
         title: "Purchase Requisition Grid (Status Tracking)",
@@ -26,7 +26,7 @@ const erpData = [
         path: "Purchase → Indent → (Select As per Dept.)",
         description: "Use this task to record items received at the gate from a vendor before they move to inventory. Ensure delivery quantities match the challan.<br><br><strong>Grid Features:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>This screen provides a grid view of all PR entries.</li><li>Users can Expand / Collapse records to check details.</li><li>Helps in tracking status: Pending, Approved, or Converted to PO.</li></ul><strong>Important Notes:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>The Purchase Grid search option is available on a universal basis for easy data search.</li><li>Expand All / Collapse All options are available as per requirement.</li><li><strong>Status Indicators:</strong><br>– <i>Unposted:</i> Approval Pending<br>– <i>Posted:</i> Approved</li><li>Once the Purchase Order (PO) is created, it will appear in the system grid for tracking.</li><li><strong>Export to Excel:</strong> Data can be exported in Excel format. (Note: Asset Code, Make, and Model details are currently under development).</li></ul>",
         note: "Check the 'Unposted' status daily to ensure your urgent requests aren't stuck waiting for local department head approval.",
-        imageURL: "Images/prgrid.png"
+        imageURL: "/Images/grid.png"
     },
     {
         title: "Purchase Requisition Approval Screen (Auto-Dash Board)",
@@ -71,7 +71,7 @@ const erpData = [
         path: "Store → GRN",
         description: "The Goods Receipt Note (GRN) is the final step in the material inward process, officially acknowledging the receipt of goods into the company's inventory.<br><br><strong>Inventory Confirmation:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Physical Verification:</strong> Once material is physically inspected and verified at the site, the GRN is generated against the corresponding <strong>Gate Entry</strong> and <strong>Purchase Order</strong>.</li><li><strong>System Posting:</strong> Saving the GRN confirms the receipt of material and automatically updates the inventory stock levels.</li></ul><strong>Standard Procedure:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>Ensure that the quantity verified physically matches the quantity entered in the GRN.</li><li>All quality checks should be completed before finalized posting.</li><li>Linked documents (PO and Gate Entry) are automatically closed or updated upon successful GRN creation.</li></ul>",
         note: "Once you click Save, stock levels are updated immediately. Verify the physical count one last time before posting.",
-        imageURL: "Images/grn.png"
+        imageURL: "/Images/GRN2.png"
     },
     // --- NEW: Sample PDF SOP added here ---
     {
