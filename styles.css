@@ -366,8 +366,8 @@ body.dark-mode .search-input:focus {
 
 .tag-login { background: #fae8ff; color: #86198f; }
 .tag-purchase { background: #ffedd5; color: #9a3412; }
-.tag-accounts { background: hsl(141, 84%, 93%); color: #15803d; }
-.tag-other-sop { background: #e7e6d5; color: #a6bb06; }
+.tag-accounts { background: hsl(65, 40%, 88%); color: #869700; }
+.tag-other-sop { background: hsl(141, 84%, 93%); color: #15803d; }
 
 .path-display {
     background: var(--bg);
@@ -657,5 +657,207 @@ footer {
     .btn {
         max-width: 100%;
         width: 100%;
+    }
+}
+
+/* --- IMPRESSIVE PROFESSIONAL FOOTER --- */
+.site-footer {
+    background-color: var(--surface);
+    border-top: 1px solid var(--border);
+    color: var(--text-main);
+    margin-top: auto; /* Pushes footer to the bottom of the page */
+    font-size: 0.95rem;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.footer-top {
+    padding: 4rem 2rem 2rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr; /* Assigns space to columns */
+    gap: 3rem;
+}
+
+/* Brand Column */
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.25rem;
+}
+
+.footer-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid var(--border);
+}
+
+.footer-brand-text h4 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1.2;
+}
+
+.footer-brand-text span {
+    font-size: 0.75rem;
+    color: var(--text-sec);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.footer-desc {
+    color: var(--text-sec);
+    line-height: 1.7;
+    max-width: 350px;
+}
+
+/* Headings */
+.footer-heading {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+/* Beautiful underline accent for headings */
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+/* Quick Links Column */
+/* Ensure all columns align their content to the left */
+.footer-col {
+    text-align: left;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Forces the list items to start from the left */
+}
+
+.footer-links li {
+    margin-bottom: 0.85rem;
+}
+
+.footer-links a {
+    color: var(--text-sec);
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+    transform: translateX(6px); /* Smooth slide effect on hover */
+}
+
+/* Contact Column */
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 1.2rem;
+    color: var(--text-sec);
+    line-height: 1.5;
+}
+
+.contact-info .icon {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    opacity: 0.8;
+}
+
+.contact-info a {
+    color: var(--text-sec);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-info a:hover {
+    color: var(--primary);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.02); /* Slight contrast from main footer body */
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 2rem;
+}
+
+body.dark-mode .footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: none; /* Disables grid for bottom bar */
+}
+
+.bottom-container p {
+    margin: 0;
+    color: var(--text-sec);
+    font-size: 0.9rem;
+}
+
+.developer-credit strong {
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* --- MOBILE RESPONSIVENESS FOR FOOTER --- */
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr; /* Drops to 2 columns on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        padding: 3rem 1.5rem 1.5rem;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr; /* Drops to 1 column on phones */
+        gap: 2.5rem;
+    }
+
+    .footer-desc {
+        max-width: 100%;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
     }
 }

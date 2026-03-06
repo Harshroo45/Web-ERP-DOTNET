@@ -59,8 +59,72 @@
         <div id="grid" class="grid"></div>
     </main>
 
-    <footer>
-        <p>&copy; <span id="year"></span> .Net ERP Guide by Harshal. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo-container">
+                        <img src="Images/logo.jpeg" alt="Logo" class="footer-logo">
+                        <div class="footer-brand-text">
+                            <h4>Vision Infra Equipment</h4>
+                            <span>Solutions Limited</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        At "VIESL", we work with everyone from big construction sites to small, private projects. No matter the size, our promise is the same: the right equipment and support to help bring your vision to life, making every project a success.
+                    </p>
+                </div>
+
+                <div class="footer-col links-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://vision.ieverp.com:8443/ERP/WEB/#/"
+                                target="_blank"
+                                rel="noopener noreferrer">Login
+                                Portal</a></li>
+                        <li><a href="#"
+                                onclick="setCategory('P&M Transaction', document.querySelector('.cat-btn:nth-child(3)')); return false;">P&M
+                                Transactions</a></li>
+                        <li><a href="#"
+                                onclick="setCategory('Purchase', document.querySelector('.cat-btn:nth-child(4)')); return false;">Purchase
+                                Modules</a></li>
+                        <li><a href="#"
+                                onclick="setCategory('Other SOP', document.querySelector('.cat-btn:nth-child(6)')); return false;">Other
+                                SOP's</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <span class="icon">📍</span>
+                            <span class="text">Vision Infra Equipment Solutions Limited 4th floor, International Business Bay, Gurunanak Nagar, Pune 411042, Maharashtra, India.</span>
+                        </li>
+                        <li>
+                            <span class="icon">✉️</span>
+                            <span class="text"><a href="mailto:pnm_audit@visioninfraindia.com">Mr. Sandeep Patil - pnm_audit@visioninfraindia.com</a></span>
+                        </li>
+                        <li>
+                            <span class="icon">✉️</span>
+                            <span class="text"><a href="mailto:itsupport@visioninfraindia.com">Mr. Harshal Khadatare - itsupport@visioninfraindia.com</a></span>
+                        </li>
+                        <li>
+                            <span class="icon">📞</span>
+                            <span class="text"><a href="tel:+918956667459">+91 89566 67459</a></span>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-container bottom-container">
+                <p>&copy; <span id="year"></span> Vision Infra Equipment Solutions Limited. All rights reserved.</p>
+                <p class="developer-credit">Designed & Developed by <strong>Harshal</strong></p>
+            </div>
+        </div>
     </footer>
 
     <div class="modal-overlay" id="modalOverlay">
@@ -76,12 +140,13 @@
             <div id="modalNote" class="modal-note"></div>
             <div class="modal-actions">
                 <button class="btn btn-close" id="closeModalBtn">Close</button>
-                
+
                 <button class="btn btn-copy" id="copyBtn">
                     <span>Copy Path</span>
                 </button>
 
-                <a href="#" download class="btn btn-copy" id="downloadBtn" style="display: none; text-decoration: none;">
+                <a href="#" download class="btn btn-copy" id="downloadBtn"
+                    style="display: none; text-decoration: none;">
                     <span>Download PDF</span>
                 </a>
             </div>
@@ -173,7 +238,7 @@
                 note: "Read all steps carefully to ensure with petty cash purchases.",
                 pdfURL: "/SOP/SOP1.pdf" // Simply provide the path to your PDF here
             },
-             {
+            {
                 title: "Revision of SOP-01 – Petty Cash Purchase Order",
                 category: "Other SOP",
                 module: "other-sop",
@@ -182,14 +247,86 @@
                 note: "Read all steps carefully to ensure with Revision of SOP-01 – Petty Cash Purchase Order.",
                 pdfURL: "/SOP/revision.pdf" // Simply provide the path to your PDF here
             },
-             {
-                title: "ERP Flow Chart",
+            {
+                title: "GRN Locking System ERP Transaction Flow",
                 category: "Other SOP",
                 module: "other-sop",
-                path: "Documents → Other SOPs → ERP Flow Chart (Downloadable PDF)",
-                description: "This PDF contains the standard operating procedure for Petty Cash Purchases.",
-                note: "Read all steps carefully to ensure with ERP Flow Chart.",
+                path: "Documents → Other SOPs → GRN Locking System SOP (Downloadable PDF)",
+                description: "This PDF contains the standard operating procedure for the GRN Locking System.",
+                note: "Read all steps carefully to ensure proper implementation of the GRN Locking System.",
                 pdfURL: "/SOP/ERPFlowChart.pdf" // Simply provide the path to your PDF here
+            },
+            {
+                title: "GRN Locking System (Purchase Department) ",
+                category: "Other SOP",
+                module: "other-sop",
+                path: "Documents → Other SOPs → GRN Locking System (Purchase Department) (Downloadable PDF)",
+                description: "This PDF contains the standard operating procedure for the GRN Locking System.",
+                note: "Read all steps carefully to ensure proper implementation of the GRN Locking System.",
+                pdfURL: "/SOP/GRNLockingSystemPO.pdf" // Simply provide the path to your PDF here
+            },
+            {
+                title: "New Equipment Tools and Tackles SOP",
+                category: "Other SOP",
+                module: "other-sop",
+                path: "Documents → Other SOPs → New Equipment Tools and Tackles SOP (Downloadable PDF)",
+                description: "This PDF contains the standard operating procedure for the GRN Locking System.",
+                note: "Read all steps carefully to identify purpose, scope and responsibilities for the new equipment tools and tackles.",
+                pdfURL: "/SOP/EquipmentToolsandTackles.pdf" // Simply provide the path to your PDF here
+            },
+            {
+                title: "New Equipment Service Manual SOP",
+                category: "Other SOP",
+                module: "other-sop",
+                path: "Documents → Other SOPs → New Equipment Service Manual SOP (Downloadable PDF)",
+                description: "This PDF contains the standard operating procedure for the GRN Locking System.",
+                note: "Read all steps carefully to understand the service procedures for the new equipment.",
+                pdfURL: "/SOP/NewEquipmentServiceManual.pdf" // Simply provide the path to your PDF here
+            },
+            {
+                title: "Standardized Procedure for third party services (Hiring Services) ",
+                category: "Other SOP",
+                module: "other-sop",
+                path: "Documents → Other SOPs → Standardized Procedure for third party services (Hiring Services) (Downloadable PDF)",
+                description: "This PDF contains the standard operating procedure for third party services (Hiring Services).",
+                note: "Read all steps carefully to understand the standardized procedure for third party services (Hiring Services).",
+                pdfURL: "/SOP/HiringService.pdf" // Simply provide the path to your PDF here
+            },
+            {
+                title: "ERP Scrap Receipt Entry Process and Report SOP",
+                category: "Other SOP",
+                module: "other-sop",
+                path: "Documents → Other SOPs → ERP Scrap Receipt Entry Process and Report SOP (Downloadable PDF)",
+                description: "This PDF contains the standard operating procedure for the ERP Scrap Receipt Entry Process and Report.",
+                note: "Read all steps carefully to understand the ERP Scrap Receipt Entry Process and Report.",
+                pdfURL: "/SOP/ERPScrapReceipt.pdf" // Simply provide the path to your PDF here
+            },
+            {
+                title: "Daily Consumption Report SOP",
+                category: "Other SOP",
+                module: "other-sop",
+                path: "Documents → Other SOPs → Daily Consumption Report SOP (Downloadable PDF)",
+                description: "This PDF contains the standard operating procedure for the Daily Consumption Report.",
+                note: "Read all steps carefully to understand the daily consumption report procedure.",
+                pdfURL: "/SOP/DailyConsumptionRSOP.pdf" // Simply provide the path to your PDF here
+            },
+            {
+                title: "Party Return Note (PRN) Process – In Place of Return Purchase Order SOP",
+                category: "Other SOP",
+                module: "other-sop",
+                path: "Documents → Other SOPs → Party Return Note (PRN) Process – In Place of Return Purchase Order SOP (Downloadable PDF)",
+                description: "This PDF contains the standard operating procedure for the Party Return Note (PRN) Process.",
+                note: "Read all steps carefully to understand the party return note process.",
+                pdfURL: "/SOP/PRNReport.pdf" // Simply provide the path to your PDF here
+            },
+            {
+                title: "Revieved Party Return Note (PRN)",
+                category: "Other SOP",
+                module: "other-sop",
+                path: "Documents → Other SOPs → Revieved Party Return Note (PRN) (Downloadable PDF)",
+                description: "This PDF contains the standard operating procedure for the Party Return Note (PRN) Process.",
+                note: "Read all steps carefully to understand the party return note process.",
+                pdfURL: "/SOP/PartyReturnNote.pdf" // Simply provide the path to your PDF here
             }
         ];
 
@@ -249,9 +386,9 @@
 
         function formatPath(pathString) {
             const steps = pathString.split('→').map(s => s.trim());
-            if(steps.length === 1) {
-               const stepsAlt = pathString.split('>').map(s => s.trim());
-               return stepsAlt.map(step => `<span class="step">${step}</span>`).join('');
+            if (steps.length === 1) {
+                const stepsAlt = pathString.split('>').map(s => s.trim());
+                return stepsAlt.map(step => `<span class="step">${step}</span>`).join('');
             }
             return steps.map(step => `<span class="step">${step}</span>`).join('');
         }
@@ -321,7 +458,7 @@
                 modalDescription.innerHTML = `<strong>Description:</strong> ${item.description}`;
                 modalDescription.style.display = 'block';
             } else {
-                modalDescription.style.display = 'none'; 
+                modalDescription.style.display = 'none';
             }
 
             // --- Button Swapping Logic ---
@@ -338,9 +475,9 @@
             if (item.note || item.imageURL || item.pdfURL) {
                 modalNote.style.display = 'block';
                 let htmlContent = "";
-                
+
                 if (item.note) htmlContent += `<strong>Tip:</strong> ${item.note}`;
-                
+
                 // If it has a PDF, show the iframe
                 if (item.pdfURL) {
                     htmlContent += `
@@ -348,7 +485,7 @@
                             <iframe src="${item.pdfURL}" type="application/pdf" style="width: 100%; height: 65vh; border-radius: 8px; border: 1px solid var(--border);" frameborder="0"></iframe>
                         </div>
                     `;
-                } 
+                }
                 // If it has an image, show the image
                 else if (item.imageURL) {
                     htmlContent += `
@@ -395,4 +532,5 @@
         renderCards(erpData);
     </script>
 </body>
+
 </html>
