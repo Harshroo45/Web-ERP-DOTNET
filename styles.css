@@ -77,10 +77,10 @@ header {
 }
 
 .brand-logo {
-    width: 80px;  /* Increased size */
-    height: 80px; /* Increased size */
+    width: 110px;  /* Increased size */
+    height: 110px; /* Increased size */
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 7px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     border: 2px solid rgba(255, 255, 255, 0.12);
     background: rgba(255, 255, 255, 0.06);
@@ -99,8 +99,18 @@ header {
 }
 
 .brand-text h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 800;
+    color: white;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.3px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.brand-text h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
     color: white;
     margin: 0;
     line-height: 1.1;
@@ -419,6 +429,7 @@ footer {
 }
 
 /* --- MODAL (POPUP) --- */
+/* --- MODAL (POPUP) --- */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -426,7 +437,7 @@ footer {
     width: 100%;
     height: 100%;
     background: var(--modal-bg);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px); /* Increased blur for a premium glass feel */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -445,76 +456,103 @@ footer {
 .modal-content {
     background: var(--surface);
     width: 100%;
-    max-width: 700px;
+    max-width: 950px; /* Increased from 700px to make it larger */
     border-radius: 16px;
-    padding: 2.5rem;
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    padding: 2.5rem 3rem; /* Slightly wider horizontal padding */
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); /* Deeper shadow to pop off the background */
     transform: scale(0.95);
-    transition: transform 0.3s ease;
+    /* Changed to a cubic-bezier for a subtle, beautiful bounce effect when opening */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     position: relative;
     max-height: 90vh;
     overflow-y: auto;
+}
+
+/* Custom Scrollbar for Modal Content to look clean */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+.modal-content::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 10px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+}
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: var(--text-sec);
 }
 
 .modal-overlay.active .modal-content {
     transform: scale(1);
 }
 
-.modal-header { margin-bottom: 1.5rem; }
+.modal-header { 
+    margin-bottom: 1.5rem; 
+    border-bottom: 1px solid var(--border); /* Adds structure to separate header from body */
+    padding-bottom: 1rem;
+}
 
 .modal-title {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.75rem; /* Slightly larger text to match the larger modal */
+    font-weight: 800;
     color: var(--accent);
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
 }
 
 .modal-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-sec);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-weight: 600;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
 .modal-body {
     background: var(--bg);
-    padding: 1.5rem;
+    padding: 2rem; /* More breathing room inside the gray box */
     border-radius: 12px;
     border: 1px solid var(--border);
 }
 
 .modal-path {
     font-family: 'Consolas', 'Monaco', monospace;
-    font-size: 1.1rem;
+    font-size: 1.15rem; /* Larger font for readability */
     color: var(--text-main);
-    line-height: 1.8;
+    line-height: 1.6;
     word-break: break-word;
+    background: var(--surface); /* Gives the path its own distinct inner box */
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px dashed var(--border);
 }
 
 .modal-description {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px dashed var(--border);
-    font-size: 0.95rem;
-    color: var(--text-sec);
-    line-height: 1.6;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 1rem; 
+    color: var(--text-main); /* Darker text for better reading on wide sections */
+    line-height: 1.7;
     display: none;
 }
 
 .modal-note {
     margin-top: 1.5rem;
-    padding: 1rem;
+    padding: 1.25rem;
     background: var(--note-bg);
-    border-left: 4px solid var(--note-border);
+    border-left: 5px solid var(--note-border);
     color: var(--note-text);
-    border-radius: 4px;
-    font-size: 0.95rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.05); /* Subtle lift */
 }
 
 .modal-actions {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
@@ -522,16 +560,18 @@ footer {
 }
 
 .btn {
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 8px;
     border: none;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.2s ease;
     flex: 1;
     max-width: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .btn-close {
@@ -540,17 +580,54 @@ footer {
     border: 1px solid var(--border);
 }
 
-.btn-close:hover { background: var(--border); }
+.btn-close:hover { 
+    background: var(--border); 
+    transform: translateY(-2px); /* Slight hover animation */
+}
 
 .btn-copy {
     background: var(--primary);
     color: white;
-    display: flex;
-    align-items: center;
     gap: 8px;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
 }
 
-.btn-copy:hover { background: var(--primary-dark); }
+.btn-copy:hover { 
+    background: var(--primary-dark); 
+    transform: translateY(-2px); /* Slight hover animation */
+    box-shadow: 0 6px 8px -1px rgba(37, 99, 235, 0.3);
+}
+
+/* --- RESPONSIVE MOBILE ADJUSTMENTS --- */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 1.5rem; /* Reduce padding to save screen space */
+        width: 100%;
+        max-height: 85vh; /* Keep it away from mobile browser toolbars */
+        border-radius: 12px;
+    }
+    
+    .modal-header { margin-bottom: 1rem; padding-bottom: 0.75rem; }
+    
+    .modal-title { font-size: 1.3rem; }
+    
+    .modal-body { padding: 1.25rem; }
+    
+    .modal-path { font-size: 1rem; padding: 0.75rem; }
+    
+    .modal-description, .modal-note { font-size: 0.95rem; }
+
+    .modal-actions {
+        flex-direction: column-reverse; /* Primary action (copy) on top for easy thumb reach */
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+    }
+
+    .btn {
+        max-width: 100%; /* Stretch buttons fully across the screen */
+        width: 100%;
+    }
+}
 
 /* --- RESPONSIVE MOBILE ADJUSTMENTS --- */
 @media (max-width: 768px) {
