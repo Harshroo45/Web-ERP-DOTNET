@@ -23,19 +23,21 @@
 
             <div class="search-area">
                 <div class="search-container">
+                    
                     <input type="text" id="searchInput" class="search-input" placeholder="Search tasks or modules...">
                     <button class="clear-search" id="clearSearch" title="Clear search">✕</button>
                 </div>
             </div>
 
             <div class="header-actions">
-                <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
-                    <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </button>
-            </div>
+    
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+        <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+</div>
         </div>
     </header>
 
@@ -46,6 +48,7 @@
             <button class="cat-btn" onclick="setCategory('P&M Transaction', this)">P&M Transaction</button>
             <button class="cat-btn" onclick="setCategory('Purchase', this)">Purchase</button>
             <button class="cat-btn" onclick="setCategory('Accounts', this)">Accounts</button>
+            
             <button class="cat-btn" onclick="setCategory('Other SOP', this)">Other SOP's</button>
         </div>
     </div>
@@ -76,14 +79,9 @@
             <div id="modalNote" class="modal-note"></div>
             <div class="modal-actions">
                 <button class="btn btn-close" id="closeModalBtn">Close</button>
-                
                 <button class="btn btn-copy" id="copyBtn">
                     <span>Copy Path</span>
                 </button>
-
-                <a href="#" download class="btn btn-copy" id="downloadBtn" style="display: none; text-decoration: none;">
-                    <span>Download PDF</span>
-                </a>
             </div>
         </div>
     </div>
@@ -96,6 +94,7 @@
                 category: "Login",
                 module: "login",
                 path: "https://vision.ieverp.com:8443/ERP/WEB",
+                // Notice the HTML formatting for the numbered list here
                 description: "<strong>Process to Access the System:</strong><ol style='margin-left: 20px; margin-top: 8px;'><li>Open the above URL link in your web browser.</li><li>Select / Enter the company name VISIONINFRA LIVE 2526.</li><li>Enter your existing User ID.</li><li>Enter the same password that you use in the current ERP system.</li><li>Click on Login to access the new .NET ERP interface.</li></ol>",
                 note: "Remember to use your already existing credentials (Username, Password) to login.",
                 imageURL: "Images/login.png"
@@ -162,35 +161,8 @@
                 description: "The Goods Receipt Note (GRN) is the final step in the material inward process, officially acknowledging the receipt of goods into the company's inventory.<br><br><strong>Inventory Confirmation:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Physical Verification:</strong> Once material is physically inspected and verified at the site, the GRN is generated against the corresponding <strong>Gate Entry</strong> and <strong>Purchase Order</strong>.</li><li><strong>System Posting:</strong> Saving the GRN confirms the receipt of material and automatically updates the inventory stock levels.</li></ul><strong>Standard Procedure:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>Ensure that the quantity verified physically matches the quantity entered in the GRN.</li><li>All quality checks should be completed before finalized posting.</li><li>Linked documents (PO and Gate Entry) are automatically closed or updated upon successful GRN creation.</li></ul>",
                 note: "Once you click Save, stock levels are updated immediately. Verify the physical count one last time before posting.",
                 imageURL: "Images/grn.png"
-            },
-            // --- NEW: Sample PDF SOP added here ---
-            {
-                title: "Petty Cash Purchase SOP",
-                category: "Other SOP",
-                module: "other-sop",
-                path: "Documents → Other SOPs → Petty Cash Purchases (Downloadable PDF)",
-                description: "This PDF contains the standard operating procedure for Petty Cash Purchases.",
-                note: "Read all steps carefully to ensure with petty cash purchases.",
-                pdfURL: "/SOP/SOP1.pdf" // Simply provide the path to your PDF here
-            },
-             {
-                title: "Revision of SOP-01 – Petty Cash Purchase Order",
-                category: "Other SOP",
-                module: "other-sop",
-                path: "Documents → Other SOPs → Revision of SOP-01 – Petty Cash Purchase Order (Downloadable PDF)",
-                description: "This PDF contains the standard operating procedure for Petty Cash Purchases.",
-                note: "Read all steps carefully to ensure with Revision of SOP-01 – Petty Cash Purchase Order.",
-                pdfURL: "/SOP/revision.pdf" // Simply provide the path to your PDF here
-            },
-             {
-                title: "ERP Flow Chart",
-                category: "Other SOP",
-                module: "other-sop",
-                path: "Documents → Other SOPs → ERP Flow Chart (Downloadable PDF)",
-                description: "This PDF contains the standard operating procedure for Petty Cash Purchases.",
-                note: "Read all steps carefully to ensure with ERP Flow Chart.",
-                pdfURL: "/SOP/ERPFlowChart.pdf" // Simply provide the path to your PDF here
             }
+            
         ];
 
         // --- 2. DOM ELEMENTS ---
@@ -207,7 +179,6 @@
         const modalNote = document.getElementById('modalNote');
         const closeModalBtn = document.getElementById('closeModalBtn');
         const copyBtn = document.getElementById('copyBtn');
-        const downloadBtn = document.getElementById('downloadBtn'); // Added variable
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
 
@@ -249,7 +220,9 @@
 
         function formatPath(pathString) {
             const steps = pathString.split('→').map(s => s.trim());
+            // Updated splitting by right arrow to handle your new data correctly.
             if(steps.length === 1) {
+                // fallback if using ">"
                const stepsAlt = pathString.split('>').map(s => s.trim());
                return stepsAlt.map(step => `<span class="step">${step}</span>`).join('');
             }
@@ -316,7 +289,6 @@
             modalPath.innerHTML = formatPath(item.path);
             currentPathText = item.path;
 
-            // Description logic
             if (item.description) {
                 modalDescription.innerHTML = `<strong>Description:</strong> ${item.description}`;
                 modalDescription.style.display = 'block';
@@ -324,33 +296,11 @@
                 modalDescription.style.display = 'none'; 
             }
 
-            // --- Button Swapping Logic ---
-            if (item.pdfURL) {
-                copyBtn.style.display = 'none';
-                downloadBtn.style.display = 'flex';
-                downloadBtn.href = item.pdfURL; // Sets the download link
-            } else {
-                copyBtn.style.display = 'flex';
-                downloadBtn.style.display = 'none';
-            }
-
-            // --- Media/Note Logic ---
-            if (item.note || item.imageURL || item.pdfURL) {
+            if (item.note || item.imageURL) {
                 modalNote.style.display = 'block';
                 let htmlContent = "";
-                
                 if (item.note) htmlContent += `<strong>Tip:</strong> ${item.note}`;
-                
-                // If it has a PDF, show the iframe
-                if (item.pdfURL) {
-                    htmlContent += `
-                        <div style="margin-top: 15px; border-top: 1px dashed var(--border); padding-top: 15px;">
-                            <iframe src="${item.pdfURL}" type="application/pdf" style="width: 100%; height: 65vh; border-radius: 8px; border: 1px solid var(--border);" frameborder="0"></iframe>
-                        </div>
-                    `;
-                } 
-                // If it has an image, show the image
-                else if (item.imageURL) {
+                if (item.imageURL) {
                     htmlContent += `
                         <div style="margin-top: 12px; border-top: 1px solid var(--border); padding-top: 12px;">
                             <a href="${item.imageURL}" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: none; display: block; margin-bottom: 8px;">
