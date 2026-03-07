@@ -40,7 +40,12 @@ body.dark-mode {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, .card-title, .footer-heading {
+    font-weight: 700;
 }
 
 body {
@@ -594,11 +599,11 @@ body.dark-mode .search-input:focus {
     color: #ffffff; 
     margin-top: auto;
     font-size: 0.95rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 .footer-top {
-    padding: 1rem 2rem 2rem;
+    padding: 0.5rem 0.5rem 0.1rem; /* Reduced from 4rem top padding */
 }
 
 .footer-container {
@@ -614,12 +619,12 @@ body.dark-mode .search-input:focus {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem; /* Reduced from 1.5rem */
 }
 
 .footer-logo {
-    width: 120px;
-    height: 120px;
+    width: 140px;  /* Reduced from 120px */
+    height: 140px; /* Reduced from 120px */
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -651,19 +656,22 @@ body.dark-mode .search-input:focus {
 }
 
 .footer-desc {
-    color: #f1f5f9;
-    line-height: 1.7;
-    max-width: 350px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    font-size: 0.9rem;
+    font-weight: 400;
+    max-width: 380px; /* Keeps the text from stretching too wide */
+    margin-top: 10px;
 }
 
 /* Headings */
 .footer-heading {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #ffffff;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+    padding-bottom: 8px;
+    margin-bottom: 1rem; /* Reduced from 1.5rem */
     position: relative;
 }
 
@@ -721,9 +729,9 @@ body.dark-mode .search-input:focus {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem; /* Reduced from 1.2rem */
     color: #ffffff;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .contact-info .icon {
@@ -741,10 +749,10 @@ body.dark-mode .search-input:focus {
 .footer-bottom {
     background-color: rgba(0, 0, 0, 0.15);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 20px 0;
+    padding: 12px 0; /* Reduced from 20px */
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.85rem;
-    margin-top: 2rem;
+    margin-top: 1rem; /* Reduced from 2rem */
 }
 
 .bottom-container {
@@ -859,3 +867,188 @@ body.dark-mode .search-input:focus {
     }
     .footer-desc { max-width: 100%; }
 }
+
+
+/*-------------------------------------------------------------------------------------------*/
+
+/* =========================================
+   PROFESSIONAL FOOTER
+========================================= */
+.site-footer {
+    background: var(--brand-gradient);
+    border-top: 1px solid var(--border);
+    color: #ffffff; 
+    margin-top: auto;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+.footer-top {
+    padding: 3rem 1.5rem 1.5rem; /* Compact top padding */
+}
+
+/* Grid Layout for Top Section */
+.footer-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 3rem;
+}
+
+/* Brand Column */
+.footer-col {
+    text-align: left;
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border);
+}
+
+.footer-brand-text h4 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.footer-desc {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    font-size: 0.9rem;
+    max-width: 380px;
+    margin-top: 10px;
+}
+
+/* Headings */
+.footer-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 8px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 40px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+/* Links & Contact Info */
+.footer-links, .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li { margin-bottom: 0.85rem; }
+
+.footer-links li a, 
+.contact-info a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.footer-links li a:hover, 
+.contact-info a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    transform: translateX(5px);
+}
+
+.contact-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 0.8rem;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+/* Footer Bottom (Copyright & Credit) */
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 1.5rem;
+}
+
+/* Flexbox Layout for Bottom Section */
+.footer-bottom-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+}
+
+.footer-bottom-wrapper p { margin: 0; }
+
+.developer-credit strong, 
+.developer-credit a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.developer-credit a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* =========================================
+   FOOTER MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 900px) {
+    .footer-content-wrapper {
+        grid-template-columns: 1fr 1fr; /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content-wrapper {
+        grid-template-columns: 1fr; /* 1 column on phones */
+        gap: 2.5rem;
+    }
+
+    .footer-desc {
+        max-width: 100%;
+    }
+
+    /* Stacks the copyright and credits on top of each other and centers them */
+    .footer-bottom-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
