@@ -73,7 +73,54 @@ const erpData = [
         note: "Once you click Save, stock levels are updated immediately. Verify the physical count one last time before posting.",
         imageURL: "/Images/GRN2.png"
     },
-    // --- NEW: Sample PDF SOP added here ---
+    {
+        title: "Goods Receipt Grid",
+        category: "P&M Transaction",
+        module: "Day-to-Day Transactions",
+        path: "Reports → GRN Info",
+        description: "This screen provides a comprehensive list view of all Goods Receipt Note (GRN) records generated in the system.<br><br><strong>Tracking & Verification:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Transaction Details:</strong> Displays all GRN transactions along with their current status and complete details.</li><li><strong>Stock Monitoring:</strong> Helps users efficiently verify received quantities, track pending GRNs, and confirm real-time stock updates.</li></ul><strong>Data View & Scope:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Filtering Options:</strong> Use as per your operational scope. Data can be filtered, viewed, and analyzed <strong>Location-wise</strong> or <strong>Item Code-wise</strong> based on your specific requirements.</li></ul>",
+        note: "Displays all GRN transactions with status and details. Use filters to view by Location or Item Code as needed.",
+        imageURL: "/Images/grnGrid.png"
+    },
+    {
+        title: "Goods Issue / Consumption",
+        category: "P&M Transaction",
+        module: "Day-to-Day Transactions",
+        path: "Production → Goods Issue View → (In Top Level Add Button)",
+        description: "Materials issued from the store for site work or department consumption must be recorded here. Users must select the item, quantity, and specific purpose of the issue.<br><br><strong>Transition Process (Issue Slip / Consumption / DCR):</strong><ol style='margin-left: 20px; margin-top: 8px;'><li><strong>Document Series Selection:</strong> Choose the series based on the group (first 2 digits) and department (last 3 digits).<ul style='margin-left: 20px; list-style-type: circle;'><li><i>M1:</i> General Maintenance Order</li><li><i>M2:</i> Breakdown Maintenance Order</li><li><i>M3:</i> Scheduled Maintenance Order</li><li><i>M4:</i> Running / Wear & Tear Items</li><li><i>ISHSD:</i> Fuel Order</li></ul></li><li><strong>Date & Location:</strong> Enter the document date and choose the specific Project / Site Code.</li><li><strong>CPC:</strong> Fill in the correct CPC / Department Code.</li><li><strong>Remarks:</strong> Enter tracking info such as Scrap reference or MRM Receipt Number.</li><li><strong>Asset Selection:</strong> Select the Machine / Asset Number to ensure cost is captured against the specific equipment.</li><li><strong>Item Details:</strong> Click the <strong>“+”</strong> symbol to fill in: Item Code, Quantity, and Bin Selection.</li><li><strong>Finalize:</strong> Click <strong>Save</strong> to complete the transaction.</li><li><strong>Navigation:</strong> Use the <strong>Back</strong> option to return to Grids / Display Transition list or enter Edit Mode.</li></ol>",
+        note: "Always select the correct Asset Number for the issue to ensure accurate cost tracking and maintenance history.",
+        imageURL: "/Images/gic.png"
+    },
+    {
+        title: "Goods Issue – Photo Attachment Process",
+        category: "P&M Transaction",
+        module: "Day-to-Day Transactions",
+        path: "Production → Goods Issue View → View (In Action Column) → Attachments (0 Files) → (In Attachment Section Click on + Symbol to Add Photos)",
+        description: "Materials issued from the store for site work or department consumption must be recorded here. Users must select the item, quantity, and specific purpose of the issue.<br><br><strong>Transition Process (Issue Slip / Consumption / DCR):</strong><ol style='margin-left: 20px; margin-top: 8px;'><li><strong>Document Series Selection:</strong> Choose the series based on the group (first 2 digits) and department (last 3 digits) [M1-M4, ISHSD].</li><li><strong>Date & Location:</strong> Enter the document date and choose the specific Project / Site Code.</li><li><strong>CPC & Asset:</strong> Fill in the correct CPC and select the specific Machine / Asset Number to capture costs accurately.</li><li><strong>Item Details:</strong> Click the <strong>“+”</strong> symbol to add Item Code, Quantity, and Bin Selection.</li><li><strong>Supporting Documentation:</strong> Users can attach supporting photos during the goods issue process for verification and record purposes.</li><li><strong>Finalize:</strong> Click <strong>Save</strong> to complete the transaction.</li><li><strong>Navigation:</strong> Use the <strong>Back</strong> option to return to Grids/Transition lists. Select the Document Number and click <strong>View</strong> for the Edit/Display mode.</li></ol><strong>Attachment & Performance Notes:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Photo Upload:</strong> Drag and drop the file related to the issued item (Google location-based, if applicable) and save the document.</li><li><strong>File Size Limit:</strong> Avoid uploading files or videos greater than <strong>10 MB</strong> to prevent system slowness or performance issues.</li></ul>",
+        note: "Attach photos related to the issued item (Google location-based, if applicable) and save the document. Avoid uploading files or videos greater than 10 MB to prevent system slowness.",
+        imageURL: "/Images/isc.png"
+    },
+    {
+        title: "Goods Issue – Approval process ",
+        category: "P&M Transaction",
+        module: "Day-to-Day Transactions",
+        path: "Auth Dashboard → Document Auth → (Select As per Dept.)",
+        description: "This module allows authorized personnel to review and approve Material Issue Slips and DCR entries. The system displays a document-wise pending list for action.<br><br><strong>Approval Categories:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>3E-PR:</strong> PR Approval</li><li><strong>43-M1, M2, M3 & M4:</strong> Issue Slip / DCR Approval</li></ul><strong>Approval Process Workflow:</strong><ol style='margin-left: 20px; margin-top: 8px;'><li><strong>Document Selection:</strong> Identify the document from the pending list.</li><li><strong>Review Details:</strong> Double-click the <strong>Document Number</strong>. The transition view will open, allowing you to review all entries and view attached photos.</li><li><strong>Correction:</strong> If errors are found, use the <strong>Send Back</strong> option to return the document to the user for correction.</li><li><strong>Authorization:</strong> Click <strong>Authorize</strong> to finalize the document for Inventory Posting.</li></ol><strong>Critical Note:</strong><ul style='margin-left: 20px; margin-top: 8px; color: var(--text-main);'><li><strong>Automatic Posting:</strong> Once the document is Authorized, the system immediately posts the transaction to inventory, and <strong>stock levels will be reduced automatically</strong>.</li><li>Please verify all quantities and attachments thoroughly before final authorization.</li></ul>",
+        note: "The system is showing a document-wise pending list. Please verify the approval process and take the necessary action.",
+        imageURL: "/Images/auth.png"
+    },
+    {
+        title: "Scrap Material Production (Against Issue)",
+        category: "P&M Transaction",
+        module: "Day-to-Day Transactions",
+        path: "Production → Goods Receipt (Receipt Production) → (In Top Level Add Button)",
+        description: "Scrap generated during operations can be recorded against issued materials to maintain proper scrap accounting and accurate inventory tracking.<br><br><strong>Transition Path: Production → Goods Receipt (Receipt Production)</strong><ol style='margin-left: 20px; margin-top: 8px;'><li><strong>Document Series:</strong> Select <strong>Scrap Receipt</strong> from the series dropdown.</li><li><strong>Date & Location:</strong> Choose the Document Date (Issue/Receipt date) and the correct Project / Site Code.</li><li><strong>CPC Details:</strong> Fill the Proper CPC including Department, Sub-Department, and Asset Number correctly.</li><li><strong>Remarks:</strong> Mention the <strong>Issue Slip Number</strong> for cross-verification, Part Names, and any additional tracking info.</li><li><strong>Item Selection:</strong> Select the Item Code. <strong>Note:</strong> All scrap-related items start with the <strong>“SS0”</strong> initial series.</li><li><strong>Quantity & Bin:</strong> Enter the Receipt / Produced Quantity and select the appropriate <strong>Bin Location</strong> for stock tracking.</li><li><strong>Finalize:</strong> Click the <strong>Save</strong> button to complete the transaction.</li></ol><strong>Important Note:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>Ensure all details are accurate before saving to prevent errors in stock posting and scrap material tracking.</li></ul>",
+        note: "Ensure all details are filled correctly before saving to avoid errors in stock posting and scrap material tracking.",
+        imageURL: "/Images/nneww.png"
+    },
+
+
+    // --- NEW: Sample PDF SOP added here-------------------------------------------------------------------------------------------------------------------- ---
     {
         title: "Petty Cash Purchase SOP",
         category: "Other SOP",
