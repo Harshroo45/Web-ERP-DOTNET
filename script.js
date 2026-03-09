@@ -11,6 +11,24 @@ const erpData = [
         imageURL: "Images/login.png"
     },
     {
+        title: "Duplicate Screen and Reload Process",
+        category: "Login",
+        module: "login",
+        path: "Right click on the browser tab → Duplicate → (In the new tab) Press Ctrl + R or click the Reload button",
+        description: "<p style='margin-bottom: 12px;'>Use this process if you need to work on multiple ERP modules simultaneously (like viewing a PR and a PO side-by-side) or need to refresh your current session.</p><strong>Step-by-Step Guide:</strong><ol style='margin-left: 20px; margin-top: 8px;'><li>Hover your mouse over the current active browser tab at the top of your screen.</li><li>Right-click on the tab and select <strong>Duplicate</strong> from the drop-down menu.</li><li>The browser will instantly open a new tab containing the exact same ERP screen.</li><li>Navigate to the newly opened tab.</li><li>Press <strong>Ctrl + R</strong> on your keyboard, or click the browser's <strong>Reload/Refresh</strong> button to fetch the latest data and sync your session.</li></ol><p style='margin-top: 12px; color: var(--primary); font-weight: 500;'><i>Please refer to the attached screenshot below for visual understanding.</i></p>",
+        note: "Always reload the newly duplicated tab immediately. This ensures the system synchronizes properly and prevents any background session errors.",
+        imageURL: "/Images/duplicatereload.png"
+    },
+    {
+        title: "Incognito Mode Login Process",
+        category: "Login",
+        module: "login",
+        path: "Browser Menu (⋮) → New Incognito window (or press Ctrl + Shift + N)",
+        description: "<p style='margin-bottom: 12px;'><strong>Always try to use Incognito (or Private) mode for a better and smoother ERP experience.</strong> Web browsers often save (cache) old website data, which can sometimes cause the ERP system to glitch, show outdated information, or create login loop errors.</p><strong>Why use Incognito Mode?</strong><ul style='margin-left: 20px; margin-top: 8px; margin-bottom: 12px;'><li><strong>No Cache Issues:</strong> It forces the browser to fetch the freshest, most up-to-date data directly from the ERP server.</li><li><strong>No Cookie Conflicts:</strong> It prevents conflicts with other saved passwords or active sessions.</li><li><strong>Better Security:</strong> Once you close the window, your session is completely erased from the computer.</li></ul><strong>Step-by-Step Guide:</strong><ol style='margin-left: 20px; margin-top: 8px;'><li>Open your web browser (e.g., Google Chrome or Microsoft Edge).</li><li>Press <strong>Ctrl + Shift + N</strong> on your keyboard, OR click the three vertical dots in the top-right corner and select <strong>New Incognito window</strong>.</li><li>A new, dark-themed browser window will open.</li><li>Enter the VIESL ERP link in the address bar and log in normally.</li></ol><p style='margin-top: 12px; color: var(--primary); font-weight: 500;'><i>Please refer to the attached screenshot below for visual understanding.</i></p>",
+        note: "Warning: Because Incognito mode doesn't save history, if you accidentally close the browser window, your ERP session will immediately end. Always ensure your work is saved before closing the tab!",
+        imageURL: "/Images/incourl.png"
+    },
+    {
         title: "Purchase Requisition (PR)",
         category: "P&M Transaction",
         module: "Day-to-Day Transactions",
@@ -383,7 +401,7 @@ function openModal(item) {
             htmlContent += `
                         <div style="margin-top: 12px; border-top: 1px solid var(--border); padding-top: 12px;">
                             <a href="${item.imageURL}" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: none; display: block; margin-bottom: 8px;">
-                                🔍 Click to view full screenshot
+                                🔍 Click here to view full Image
                             </a>
                             <img src="${item.imageURL}" alt="Screenshot" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" onerror="this.style.display='none'">
                         </div>
