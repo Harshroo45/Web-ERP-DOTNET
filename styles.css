@@ -234,7 +234,7 @@ body.dark-mode .search-input:focus {
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: #ffffff;
+    color: #5b70ff;
     cursor: pointer;
     font-size: 1.3rem;
     display: none;
