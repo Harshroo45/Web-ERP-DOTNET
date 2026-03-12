@@ -42,7 +42,7 @@ const erpData = [
         category: "P&M Transaction",
         module: "Day-to-Day Transactions",
         path: "Purchase → Indent → (Select As per Dept.)",
-        description: "Use this task to record items received at the gate from a vendor before they move to inventory. Ensure delivery quantities match the challan.<br><br><strong>Grid Features:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>This screen provides a grid view of all PR entries.</li><li>Users can Expand / Collapse records to check details.</li><li>Helps in tracking status: Pending, Approved, or Converted to PO.</li></ul><strong>Important Notes:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>The Purchase Grid search option is available on a universal basis for easy data search.</li><li>Expand All / Collapse All options are available as per requirement.</li><li><strong>Status Indicators:</strong><br>– <i>Unposted:</i> Approval Pending<br>– <i>Posted:</i> Approved</li><li>Once the Purchase Order (PO) is created, it will appear in the system grid for tracking.</li><li><strong>Export to Excel:</strong> Data can be exported in Excel format. (Note: Asset Code, Make, and Model details are currently under development).</li></ul>",
+        description: "Use this task to record items received at the gate from a vendor before they move to inventory. Ensure delivery quantities match the challan.<br><br><strong>Grid Features:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>This screen provides a grid view of all PR entries.</li><li>Users can Expand / Collapse records to check details.</li><li>Helps in tracking status: Pending, Approved, or Converted to PO.</li></ul><strong>Important Notes:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>The Purchase Grid search option is available on a universal basis for easy data search.</li><li>Expand All / Collapse All options are available as per requirement.</li><li><strong>Status Indicators:</strong><br>– <i>Unposted:</i> Approval Pending<br>– <i>Posted:</i> Approved</li><li>Once the Purchase Order (PO) is created, it will appear in the system grid for tracking.</li><li><strong>Export to Excel:</strong> Data can be exported in Excel format. (Note: Asset Code, Make, and Model details are currently under development).</li></ul><br><strong>Note: It helps in tracking the current status such as Pending, Approved, or Converted to PO, Gate Entry, GRN Details.</strong>",
         note: "Check the 'Unposted' status daily to ensure your urgent requests aren't stuck waiting for local department head approval.",
         imageURL: "/Images/grid.png"
     },
@@ -136,6 +136,70 @@ const erpData = [
         note: "Ensure all details are filled correctly before saving to avoid errors in stock posting and scrap material tracking.",
         imageURL: "/Images/nneww.png"
     },
+    {
+    title: "Purchase Order Creation",
+    category: "Purchase",
+    module: "Purchase",
+    path: "Purchase → Purchase Order → (Select the Department)",
+    description: "<p style='margin-bottom: 12px;'>This module converts Approved Purchase Requisitions (PR) into Purchase Orders (PO). <strong>Note:</strong> Users must strictly verify vendor details, item specifications, quantity, and pricing before saving.</p><strong>Step-by-Step Transition Process:</strong><ol style='margin-left: 20px; margin-top: 8px;'><li><strong>Initial Setup:</strong> Choose the Document Series for your department and enter the Document Date (the actual date post-PR approval). Always set the PO Type to <strong>Indent</strong>.</li><li><strong>Vendor & Routing:</strong> Select the Vendor Name, their registered Business Location, and the required delivery Location.</li><li><strong>Costing & Reference:</strong> Fill in the correct CPC (Cost/Profit Centre). Enter the Vendor Quotation Number and Quotation Date as references.</li><li><strong>Indent & Logistics:</strong> Select the approved Indent Number(s). Enter the agreed Order Terms and specify the final Shipping Address.</li><li><strong>Asset Linkage:</strong> Fill in the C-Hook / Asset Details (Equipment No., Asset No.) if applicable to the purchase.</li><li><strong>Rates & Taxes:</strong> Enter the Item Rate exactly as per the vendor quotation. Select the correct Tax Code (e.g., Purchase with/without GST).</li><li><strong>Line Level Charges:</strong> Click the symbol next to the Tax Code to add extra components like Discounts, Freight, or Insurance. These can be formatted as a Percentage (%), Rate per Unit, or a Lump Sum Amount.</li><li><strong>Document Terms:</strong> Apply Document Level Taxes and add any additional multi-line Order Terms required by the vendor.</li><li><strong>Finalize:</strong> Carefully validate all entered data. Once confirmed, click <strong>Save</strong> to generate the Purchase Order.</li></ol>",
+    note: "Always double-check your Line Level Charges (Discounts/Freight) and Tax Codes before hitting Save, as these directly impact the final PO value.",
+    imageURL: "/Images/newpr.png" 
+    },
+    {
+    title: "Purchase Order Approval Process",
+    category: "Purchase",
+    module: "Purchase",
+    path: "Auth Dashboard → Document Auth → (Select As per Dept.)",
+    description: "<p style='margin-bottom: 12px;'>Created Purchase Orders will automatically move through the system approval workflow. Authorized users will review the document and can <strong>Approve</strong>, <strong>Reject</strong>, or <strong>Send Back</strong> the PO for correction if required.</p><strong>System Provisions Available:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Send Back Option:</strong> Return the document to the creator for modifications.</li><li><strong>PR Authorization:</strong> Standard authorization workflow.</li><li><strong>PR Print Option:</strong> Generate a physical/PDF copy of the requisition.</li></ul>",
+    note: "PR Edit Option at the Approval Level is currently not available. The same has been discussed with the PCSOFT team, and we are awaiting their response. The update will be shared soon.",
+    imageURL: "/Images/neww22.png" 
+    },
+    {
+    title: "Purchase Order Display Grid",
+    category: "Purchase",
+    module: "Purchase",
+    path: "Auth Dashboard → Document Auth → (Select As per Dept.)",
+    description: "<p style='margin-bottom: 12px;'>This screen displays all Purchase Orders generated against approved PRs. Users can easily view comprehensive details such as Vendor, Item, Quantity, Rate, and Order Status.</p><strong>Grid Features:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>All PO Orders:</strong> The grid displays a complete master list of all Purchase Orders.</li><li><strong>Universal Search:</strong> A universal search provision is available, allowing users to filter, select, and search data exactly as per their requirements.</li></ul>",
+    note: "PR Type–wise grids are currently under process and will be available in the system soon.",
+    imageURL: "/Images/neww33.png" 
+    },
+    {
+    title: "Gate Entry Grid",
+    category: "Purchase",
+    module: "Purchase",
+    path: "Store → Gate Entry",
+    description: "<p style='margin-bottom: 12px;'>This screen provides a comprehensive list view of all gate entries recorded in the system.</p><strong>Key Capabilities:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Status Tracking:</strong> Users can quickly verify pending or completed gate entries at a glance.</li><li><strong>Verification:</strong> Easily cross-check incoming gate entry details directly with the corresponding Purchase Order to ensure complete accuracy.</li></ul>",
+    note: "Always cross-check the gate entry quantities with the original PO to avoid any discrepancies before proceeding to the GRN stage.",
+    imageURL: "/Images/neww44.png"
+    },
+    {
+    title: "Goods Receipt Note (GRN) – Creation",
+    category: "Purchase",
+    module: "Day-to-Day Transactions",
+    path: "Store → Goods Receipt Note (GRN)",
+    description: "<p style='margin-bottom: 12px;'>After physical verification of the received material, the GRN is generated against the Gate Entry and Purchase Order. This confirms the official receipt of materials into inventory.</p><strong>GRN Transition Process:</strong><ol style='margin-left: 20px; margin-top: 8px;'><li><strong>Document Details:</strong> Select the appropriate GRN Document Series as per your department/project and enter the Document Date (actual material receipt date).</li><li><strong>Vendor & Location:</strong> Select the Vendor Code, the correct Receipt Location / Project Code, and the Business Location (as per the vendor invoice).</li><li><strong>Tracking Data:</strong> Fill in the correct CPC and select the relevant <strong>Gate Entry Number</strong> for the received material.</li><li><strong>Invoice References:</strong> Enter the Vendor Invoice Number in the <i>Your Ref.</i> field and the Invoice Date in the <i>Your Date</i> field.</li><li><strong>Verification & Save:</strong> Carefully verify the Quantity (QTY), Rate, Invoice Value, GST Details, and Bin Selection. Once completely verified, click <strong>Save</strong>.</li></ol><strong>Special Handling Cases:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Short Quantity Receipt:</strong> If the received quantity is less than the invoice, enter the actual received quantity in the <i>“Qty OK”</i> column. The system will auto-generate a Purchase Return Invoice during Bill Booking.</li><li><strong>Damaged Quantity:</strong> If material is damaged, revise and reject the damaged quantity in the system. The Invoice/Qty will auto-adjust, and a Debit Note will generate during Bill Passing.</li></ul>",
+    note: "Always verify the Quantity, Rate, and GST Details thoroughly before saving to ensure seamless Bill Booking and accounting transitions.",
+    imageURL: "/Images/neww55.png"
+    },
+    {
+    title: "Goods Receipt Note (GRN) – Display",
+    category: "Purchase",
+    module: "Day-to-Day Transactions",
+    path: "Store → Goods Receipt Note (GRN) → Display Grid",
+    description: "<p style='margin-bottom: 12px;'>This screen displays all the generated Goods Receipt Notes (GRN) in the system.</p><ul style='margin-left: 20px; margin-top: 8px;'><li>After physical verification of the material, the GRN is generated against the corresponding Gate Entry and Purchase Order.</li><li>This document officially confirms the receipt of material into the inventory.</li></ul>",
+    note: "Use this grid to review previously created GRNs and verify that the system inventory records match the physical stock received.",
+    imageURL: "/Images/neww66.png"
+    },
+    {
+    title: "Goods Receipt Grid",
+    category: "Purchase",
+    module: "Day-to-Day Transactions",
+    path: "Store → Goods Receipt Note (GRN) → Grid",
+    description: "<p style='margin-bottom: 12px;'>This screen displays a comprehensive list of all Goods Receipt Note (GRN) transactions, including their current status and detailed information.</p><strong>Key Capabilities:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Verification:</strong> Helps users easily verify received quantities and track pending GRNs.</li><li><strong>Stock Monitoring:</strong> Cross-check real-time stock updates directly from the grid.</li></ul>",
+    note: "You can filter and use the grid exactly as per your specific scope (e.g., Location-wise or Item Code-wise) for targeted tracking.",
+    imageURL: "/Images/neww77.png"
+    },
+
 
 
     // --- NEW: Sample PDF SOP added here-------------------------------------------------------------------------------------------------------------------- ---
