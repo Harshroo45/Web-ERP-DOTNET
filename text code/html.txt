@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.Net ERP Guide</title>
+    <title>VIESL ERP Knowledge Hub</title>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <link rel="icon" type="image/jpeg" href="Images/favicon.ico">
@@ -23,16 +23,16 @@
             <div class="brand">
                 <img src="Images/logo.jpeg" alt="Logo" class="brand-logo">
                 <div class="brand-text">
+                    <span class="eyebrow">VIESL</span>
                     <h1>Vision Infra Equipment Solutions Limited</h1>
-                    <h3>.Net ERP Guide</h3>
-                    <span class="badge">VIESL</span>
+                    <h3>ERP Knowledge Hub</h3>
                 </div>
             </div>
 
             <div class="search-area">
                 <div class="search-container">
-                    <input type="text" id="searchInput" class="search-input" placeholder="Search tasks or modules...">
-                    <button class="clear-search" id="clearSearch" title="Clear search">✕</button>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search SOPs, paths, modules...">
+                    <button class="clear-search" id="clearSearch" title="Clear search">&times;</button>
                 </div>
             </div>
 
@@ -54,13 +54,38 @@
             <button class="cat-btn" onclick="setCategory('P&M Transaction', this)">P&M Transaction</button>
             <button class="cat-btn" onclick="setCategory('Purchase', this)">Purchase</button>
             <button class="cat-btn" onclick="setCategory('Accounts', this)">Accounts</button>
-            <button class="cat-btn" onclick="setCategory('Other SOP', this)">Other SOP's</button>
+            <button class="cat-btn" onclick="setCategory('Other SOP', this)">Other SOPs</button>
         </div>
     </div>
 
     <main class="container">
+        <section class="overview-panel" aria-label="ERP guide overview">
+            <div class="overview-copy">
+                <span class="section-kicker">Internal ERP operations</span>
+                <h2>Find the right process path, SOP, or visual guide in seconds.</h2>
+                <p>Centralized reference for login support, P&amp;M transactions, purchase workflows, accounts tasks, and downloadable SOP documents.</p>
+            </div>
+            <div class="overview-metrics" aria-label="Guide coverage">
+                <div class="metric-card">
+                    <strong>5</strong>
+                    <span>Categories</span>
+                </div>
+                <div class="metric-card">
+                    <strong>24+</strong>
+                    <span>Process Guides</span>
+                </div>
+                <div class="metric-card">
+                    <strong>11</strong>
+                    <span>PDF SOPs</span>
+                </div>
+            </div>
+        </section>
+
         <div class="section-header">
-            <h2 class="section-title">Explorer</h2>
+            <div>
+                <span class="section-kicker">Process library</span>
+                <h2 class="section-title">ERP Explorer</h2>
+            </div>
             <span class="stats" id="pathCount">Loading...</span>
         </div>
 
@@ -97,7 +122,7 @@
                                 Modules</a></li>
                         <li><a href="#"
                                 onclick="setCategory('Other SOP', document.querySelector('.cat-btn:nth-child(6)')); return false;">Other
-                                SOP's</a></li>
+                                SOPs</a></li>
                     </ul>
                 </div>
 
@@ -105,31 +130,31 @@
                     <h4 class="footer-heading">Contact Us</h4>
                     <ul class="contact-info">
                         <li>
-                            <span class="icon">📍</span>
+                            <span class="icon">Location</span>
                             <span class="text">
                                 Vision Infra Equipment Solutions Limited<br>
                                 4th floor, International Business Bay, Gurunanak Nagar, Pune 411042, Maharashtra, India.
                             </span>
                         </li>
                         <li>
-                            <span class="icon">👤</span>
+                            <span class="icon">Support</span>
                             <span class="text" style="display: flex; flex-direction: column; gap: 2px;">
                                 <strong style="color: #ffffff;">Mr. Sandeep Patil</strong>
                                 <span style="font-size: 0.85rem; line-height: 1.5;">
-                                    ✉️ <a
+                                    Email <a
                                         href="mailto:pnm_audit@visioninfraindia.com?subject=ERP%20Support%20Request">pnm_audit@visioninfraindia.com</a><br>
-                                    📞 <a href="tel:+918956667459">+91 89566 67459</a>
+                                    Phone <a href="tel:+918956667459">+91 89566 67459</a>
                                 </span>
                             </span>
                         </li>
                         <li>
-                            <span class="icon">👤</span>
+                            <span class="icon">IT Help</span>
                             <span class="text" style="display: flex; flex-direction: column; gap: 2px;">
                                 <strong style="color: #ffffff;">Mr. Harshal Khadatare</strong>
                                 <span style="font-size: 0.85rem; line-height: 1.5;">
-                                    ✉️ <a
+                                    Email <a
                                         href="mailto:itsupport@visioninfraindia.com?subject=ERP%20Support%20Request">itsupport@visioninfraindia.com</a><br>
-                                    📞 <a href="tel:+919075768742">+91 90757 68742</a>
+                                    Phone <a href="tel:+919075768742">+91 90757 68742</a>
                                 </span>
                             </span>
                         </li>

@@ -137,35 +137,6 @@ const erpData = [
         imageURL: "Images/nneww.png"
     },
     {
-    title: "FOC Purchase Requisition (PR)",
-    category: "Purchase",
-    module: "Purchase",
-    path: "Purchase → Indent → PR Creation",
-    description: "The FOC (Free of Cost) Purchase Requisition (PR) process is the first step in requesting sample or free-of-cost materials in the ERP system.<br><br><strong>PR Creation Process:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Step 1:</strong> Open the PR Creation screen in the ERP system.</li><li><strong>Step 2:</strong> Enter all mandatory details including material details, quantity, asset information, and supporting remarks.</li><li><strong>Step 3:</strong> Inside <strong>Additional Fields</strong>, select <strong>'F1 FOC PO'</strong> in the CPC field.</li><li><strong>Step 4:</strong> Ensure PR is created asset-wise for proper monitoring and future analysis.</li><li><strong>Step 5:</strong> Save the PR after verification.</li><li><strong>Step 6:</strong> After saving, PR details will automatically reflect in <strong>Analysis → 07 F1 FOC PO</strong>.</li></ul><strong>Important Instructions:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>The <strong>F1</strong> field is specially added for tracking FOC activities.</li><li>Verify all mandatory fields before saving the PR.</li><li>Supporting documents should be attached properly for approval and audit purposes.</li><li>Incorrect PR entries may create delays in PO and GRN processing.</li></ul>",
-    note: "Always select 'F1 FOC PO' in Additional Fields → CPC for all FOC Purchase Requisitions.",
-    imageURL: "Images/foc-pr.png"
-},
-
-{
-    title: "FOC Purchase Order (PO)",
-    category: "Purchase",
-    module: "Purchase",
-    path: "Purchase → Order → PO Creation",
-    description: "The FOC (Free of Cost) Purchase Order (PO) process is used to create procurement orders against approved FOC Purchase Requisitions.<br><br><strong>PO Creation Steps:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Step 1:</strong> Open the PO Creation screen in the ERP system.</li><li><strong>Step 2:</strong> Select the approved FOC PR reference.</li><li><strong>Step 3:</strong> Verify vendor details, material details, quantity, and PR information.</li><li><strong>Step 4:</strong> Inside <strong>Additional Fields</strong>, select <strong>'F1 FOC PO'</strong> in the CPC field.</li><li><strong>Step 5:</strong> Tick the <strong>Sample</strong> checkbox for FOC items as shown in the system screenshot.</li><li><strong>Step 6:</strong> If applicable, update GST details under <strong>Sample GST</strong>.</li><li><strong>Step 7:</strong> Save and create the PO in both <strong>Old ERP System</strong> and <strong>.NET ERP System</strong>.</li></ul><strong>Important Instructions:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>PO should only be created against approved PR documents.</li><li>Material value may be nil in FOC cases, but GST may still apply as per statutory compliance.</li><li>Ensure both ERP systems are updated properly for CPC monitoring and reporting.</li><li>Verify all supporting documents before final PO posting.</li></ul>",
-    note: "For all FOC Purchase Orders, select 'F1 FOC PO' in CPC and tick the 'Sample' checkbox before saving.",
-    imageURL: "Images/foc-po.png"
-},
-
-{
-    title: "FOC Goods Receipt Note (GRN)",
-    category: "Purchase",
-    module: "Purchase",
-    path: "Store → GRN → GRN Creation",
-    description: "The Goods Receipt Note (GRN) is the final step in the FOC material inward process, officially confirming receipt of materials into the company inventory.<br><br><strong>GRN Creation Steps:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Step 1:</strong> Open the GRN screen in the ERP system.</li><li><strong>Step 2:</strong> Select the corresponding FOC Purchase Order reference.</li><li><strong>Step 3:</strong> Physically inspect and verify the received material quantity and condition.</li><li><strong>Step 4:</strong> Tick the <strong>Sample</strong> checkbox only for FOC-related GRN entries.</li><li><strong>Step 5:</strong> Enter verified quantity and inward details in the GRN screen.</li><li><strong>Step 6:</strong> Complete all required quality checks before final posting.</li><li><strong>Step 7:</strong> Save the GRN in both <strong>Old ERP System</strong> and <strong>.NET ERP System</strong>.</li></ul><strong>Monitoring & Reporting:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>CPC Team monitors PR Pending Status, PO Pending Status, PR to PO processing duration, and delayed transactions.</li><li>Periodic reports are generated for management review and operational analysis.</li></ul><strong>Important Instructions:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>Ensure physical quantity matches GRN quantity before saving.</li><li>Verify linked PR and PO references carefully.</li><li>Inventory stock records will update automatically after GRN posting.</li><li>Maintain proper inward records for audit and tracking purposes.</li></ul>",
-    note: "Tick the 'Sample' checkbox only for FOC-related GRN transactions before final posting.",
-    imageURL: "Images/foc-grn.png"
-},
-    {
         title: "Purchase Order Creation",
         category: "Purchase",
         module: "Purchase",
@@ -422,7 +393,7 @@ function applyFilters() {
 
 function renderCards(data) {
     grid.innerHTML = '';
-    pathCount.textContent = `${data.length} paths found`;
+    pathCount.textContent = `${data.length} records`;
 
     if (data.length === 0) {
         grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: var(--text-sec);"><h3>No paths found.</h3><p>Try a different search or category.</p></div>`;
@@ -441,8 +412,8 @@ function renderCards(data) {
                         <span class="module-tag ${moduleClass}">${item.category}</span>
                     </div>
                     <div class="path-display">${formatPath(item.path)}</div>
-                    <div class="card-footer"><span>${item.note || ''}</span></div>
-                    <div class="click-hint">Click to view full details</div>
+                    <div class="card-footer"><span>${item.note || 'Reference path available for this process.'}</span></div>
+                    <div class="click-hint">View details</div>
                 `;
         grid.appendChild(card);
     });
@@ -494,7 +465,7 @@ function openModal(item) {
             htmlContent += `
                         <div style="margin-top: 12px; border-top: 1px solid var(--border); padding-top: 12px;">
                             <a href="${item.imageURL}" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: none; display: block; margin-bottom: 8px;">
-                                🔍 Click here to view full Image
+                                View full image
                             </a>
                             <img src="${item.imageURL}" alt="Screenshot" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" onerror="this.style.display='none'">
                         </div>
