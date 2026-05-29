@@ -375,7 +375,24 @@ if (localStorage.getItem('theme') === 'dark') {
     updateThemeIcon(true);
 }
 
-themeToggle.addEventListener('click', toggleDarkMode);
+themeToggle.addEventListener('click', toggleDarkMode, false);
+themeToggle.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleDarkMode();
+}, false);
+
+// Prevent double trigger
+let lastThemeToggleTime = 0;
+const themeToggleOriginal = themeToggle.onclick;
+themeToggle.addEventListener('click', (e) => {
+    const now = Date.now();
+    if (now - lastThemeToggleTime < 300) {
+        e.preventDefault();
+        return;
+    }
+    lastThemeToggleTime = now;
+}, false);
 
 // --- 4. HELPER FUNCTIONS ---
 function getModuleClass(moduleName) {
@@ -507,21 +524,70 @@ function openModal(item) {
     modalOverlay.classList.add('active');
 }
 
-function closeModal() { modalOverlay.classList.remove('active'); }
-closeModalBtn.addEventListener('click', closeModal);
-modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); });
+function closeModal() { 
+    modalOverlay.classList.remove('active'); 
+}
 
-copyBtn.addEventListener('click', () => {
+// Multiple event listeners for close button to ensure it works on mobile
+closeModalBtn.addEventListener('click', closeModal, false);
+closeModalBtn.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    closeModal();
+}, false);
+
+// Close on overlay click (but not on modal content)
+modalOverlay.addEventListener('click', (e) => { 
+    if (e.target === modalOverlay) {
+        closeModal();
+    }
+}, false);
+
+// Keyboard close
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+        closeModal();
+    }
+});
+
+copyBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    handleCopyPath();
+}, false);
+
+copyBtn.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    handleCopyPath();
+}, false);
+
+function handleCopyPath() {
+    if (!currentPathText) return;
+    
     navigator.clipboard.writeText(currentPathText).then(() => {
-        const originalText = copyBtn.innerHTML;
-        copyBtn.innerHTML = "<span>Copied!</span>";
+        const originalHTML = copyBtn.innerHTML;
+        copyBtn.innerHTML = "<span>✓ Copied!</span>";
         copyBtn.style.background = "#16a34a";
+        copyBtn.style.color = "white";
+        
         setTimeout(() => {
-            copyBtn.innerHTML = originalText;
+            copyBtn.innerHTML = originalHTML;
+            copyBtn.style.background = "";
+            copyBtn.style.color = "";
+        }, 2000);
+    }).catch((err) => {
+        console.error('Failed to copy:', err);
+        const originalHTML = copyBtn.innerHTML;
+        copyBtn.innerHTML = "<span>Failed!</span>";
+        copyBtn.style.background = "#dc2626";
+        
+        setTimeout(() => {
+            copyBtn.innerHTML = originalHTML;
             copyBtn.style.background = "";
         }, 2000);
     });
-});
+}
 
 // --- 7. EVENT LISTENERS ---
 searchInput.addEventListener('input', applyFilters);
@@ -578,8 +644,12 @@ const modalObserver = new MutationObserver((mutations) => {
         if (mutation.attributeName === 'class') {
             if (modalOverlay.classList.contains('active')) {
                 document.body.style.overflow = 'hidden';
+                document.body.style.position = 'fixed';
+                document.body.style.width = '100%';
             } else {
                 document.body.style.overflow = originalBodyOverflow;
+                document.body.style.position = '';
+                document.body.style.width = '';
             }
         }
     });
