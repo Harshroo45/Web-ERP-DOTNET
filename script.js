@@ -531,5 +531,71 @@ clearSearchBtn.addEventListener('click', () => {
     searchInput.focus();
 });
 
+// --- 8. MOBILE & TOUCH OPTIMIZATIONS ---
+// Prevent double-tap zoom on buttons
+document.addEventListener('touchend', function(e) {
+    if (e.target.tagName === 'BUTTON' || e.target.closest('button')) {
+        e.preventDefault();
+    }
+}, { passive: false });
+
+// Add touch feedback for cards on mobile
+document.addEventListener('touchstart', function(e) {
+    const card = e.target.closest('.card');
+    if (card) {
+        card.style.transform = 'scale(0.98)';
+    }
+}, { passive: true });
+
+document.addEventListener('touchend', function(e) {
+    const card = e.target.closest('.card');
+    if (card) {
+        card.style.transform = '';
+    }
+}, { passive: true });
+
+// Improve modal closing on mobile with swipe support
+let touchStartY = 0;
+modalOverlay.addEventListener('touchstart', (e) => {
+    if (e.target === modalOverlay) {
+        touchStartY = e.touches[0].clientY;
+    }
+}, { passive: true });
+
+modalOverlay.addEventListener('touchend', (e) => {
+    if (e.target === modalOverlay) {
+        const touchEndY = e.changedTouches[0].clientY;
+        if (touchEndY - touchStartY > 50) {
+            closeModal();
+        }
+    }
+}, { passive: true });
+
+// Prevent body scroll when modal is open
+const originalBodyOverflow = document.body.style.overflow;
+const modalObserver = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'class') {
+            if (modalOverlay.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = originalBodyOverflow;
+            }
+        }
+    });
+});
+
+modalObserver.observe(modalOverlay, { attributes: true });
+
+// Improve keyboard behavior on mobile
+document.addEventListener('touchmove', function(e) {
+    if (e.target === searchInput) {
+        return;
+    }
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        return;
+    }
+}, { passive: true });
+
 // Initial render
 renderCards(erpData);

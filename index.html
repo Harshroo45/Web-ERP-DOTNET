@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="description" content=".Net ERP Guide - Vision Infra Equipment Solutions Limited">
+    <meta name="theme-color" content="#2f7af1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>.Net ERP Guide</title>
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +17,57 @@
 
     <link rel="icon" type="image/jpeg" href="Images/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Touch-friendly improvements */
+        @media (hover: none) and (pointer: coarse) {
+            .cat-btn,
+            .card,
+            .btn,
+            .theme-toggle {
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
+            .card {
+                padding: 1.25rem;
+            }
+
+            .card:active {
+                transform: scale(0.98);
+            }
+        }
+
+        /* Prevent zoom on input focus for iOS */
+        @media (max-width: 768px) {
+            input, textarea, select {
+                font-size: 16px !important;
+            }
+        }
+
+        /* Optimize scrolling performance */
+        .nav-inner,
+        .modal-content {
+            -webkit-overflow-scrolling: touch;
+        }
+
+        /* Ensure safe area for notch devices */
+        @supports (padding: max(0px)) {
+            body {
+                padding-left: max(12px, env(safe-area-inset-left));
+                padding-right: max(12px, env(safe-area-inset-right));
+            }
+
+            header {
+                padding-left: max(0px, env(safe-area-inset-left));
+                padding-right: max(0px, env(safe-area-inset-right));
+            }
+
+            .site-footer {
+                padding-left: max(0px, env(safe-area-inset-left));
+                padding-right: max(0px, env(safe-area-inset-right));
+            }
+        }
+    </style>
 </head>
 
 <body>
