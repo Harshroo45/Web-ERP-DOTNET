@@ -1,4 +1,3 @@
-
 // --- 1. DATA ---
 const erpData = [
     {
@@ -137,34 +136,32 @@ const erpData = [
         imageURL: "Images/nneww.png"
     },
     {
-    title: "FOC Purchase Requisition (PR)",
-    category: "Purchase",
-    module: "Purchase",
-    path: "Purchase → Indent → PR Creation",
-    description: "The FOC (Free of Cost) Purchase Requisition (PR) process is the first step in requesting sample or free-of-cost materials in the ERP system.<br><br><strong>PR Creation Process:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Step 1:</strong> Open the PR Creation screen in the ERP system.</li><li><strong>Step 2:</strong> Enter all mandatory details including material details, quantity, asset information, and supporting remarks.</li><li><strong>Step 3:</strong> Inside <strong>Additional Fields</strong>, select <strong>'F1 FOC PO'</strong> in the CPC field.</li><li><strong>Step 4:</strong> Ensure PR is created asset-wise for proper monitoring and future analysis.</li><li><strong>Step 5:</strong> Save the PR after verification.</li><li><strong>Step 6:</strong> After saving, PR details will automatically reflect in <strong>Analysis → 07 F1 FOC PO</strong>.</li></ul><strong>Important Instructions:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>The <strong>F1</strong> field is specially added for tracking FOC activities.</li><li>Verify all mandatory fields before saving the PR.</li><li>Supporting documents should be attached properly for approval and audit purposes.</li><li>Incorrect PR entries may create delays in PO and GRN processing.</li></ul>",
-    note: "Always select 'F1 FOC PO' in Additional Fields → CPC for all FOC Purchase Requisitions.",
-    imageURL: "Images/foc-pr.png"
-},
-
-{
-    title: "FOC Purchase Order (PO)",
-    category: "Purchase",
-    module: "Purchase",
-    path: "Purchase → Order → PO Creation",
-    description: "The FOC (Free of Cost) Purchase Order (PO) process is used to create procurement orders against approved FOC Purchase Requisitions.<br><br><strong>PO Creation Steps:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Step 1:</strong> Open the PO Creation screen in the ERP system.</li><li><strong>Step 2:</strong> Select the approved FOC PR reference.</li><li><strong>Step 3:</strong> Verify vendor details, material details, quantity, and PR information.</li><li><strong>Step 4:</strong> Inside <strong>Additional Fields</strong>, select <strong>'F1 FOC PO'</strong> in the CPC field.</li><li><strong>Step 5:</strong> Tick the <strong>Sample</strong> checkbox for FOC items as shown in the system screenshot.</li><li><strong>Step 6:</strong> If applicable, update GST details under <strong>Sample GST</strong>.</li><li><strong>Step 7:</strong> Save and create the PO in both <strong>Old ERP System</strong> and <strong>.NET ERP System</strong>.</li></ul><strong>Important Instructions:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>PO should only be created against approved PR documents.</li><li>Material value may be nil in FOC cases, but GST may still apply as per statutory compliance.</li><li>Ensure both ERP systems are updated properly for CPC monitoring and reporting.</li><li>Verify all supporting documents before final PO posting.</li></ul>",
-    note: "For all FOC Purchase Orders, select 'F1 FOC PO' in CPC and tick the 'Sample' checkbox before saving.",
-    imageURL: "Images/foc-po.png"
-},
-
-{
-    title: "FOC Goods Receipt Note (GRN)",
-    category: "Purchase",
-    module: "Purchase",
-    path: "Store → GRN → GRN Creation",
-    description: "The Goods Receipt Note (GRN) is the final step in the FOC material inward process, officially confirming receipt of materials into the company inventory.<br><br><strong>GRN Creation Steps:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Step 1:</strong> Open the GRN screen in the ERP system.</li><li><strong>Step 2:</strong> Select the corresponding FOC Purchase Order reference.</li><li><strong>Step 3:</strong> Physically inspect and verify the received material quantity and condition.</li><li><strong>Step 4:</strong> Tick the <strong>Sample</strong> checkbox only for FOC-related GRN entries.</li><li><strong>Step 5:</strong> Enter verified quantity and inward details in the GRN screen.</li><li><strong>Step 6:</strong> Complete all required quality checks before final posting.</li><li><strong>Step 7:</strong> Save the GRN in both <strong>Old ERP System</strong> and <strong>.NET ERP System</strong>.</li></ul><strong>Monitoring & Reporting:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>CPC Team monitors PR Pending Status, PO Pending Status, PR to PO processing duration, and delayed transactions.</li><li>Periodic reports are generated for management review and operational analysis.</li></ul><strong>Important Instructions:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>Ensure physical quantity matches GRN quantity before saving.</li><li>Verify linked PR and PO references carefully.</li><li>Inventory stock records will update automatically after GRN posting.</li><li>Maintain proper inward records for audit and tracking purposes.</li></ul>",
-    note: "Tick the 'Sample' checkbox only for FOC-related GRN transactions before final posting.",
-    imageURL: "Images/foc-grn.png"
-},
+        title: "FOC Purchase Requisition (PR)",
+        category: "Purchase",
+        module: "Purchase",
+        path: "Purchase → Indent → PR Creation",
+        description: "The FOC (Free of Cost) Purchase Requisition (PR) process is the first step in requesting sample or free-of-cost materials in the ERP system.<br><br><strong>PR Creation Process:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Step 1:</strong> Open the PR Creation screen in the ERP system.</li><li><strong>Step 2:</strong> Enter all mandatory details including material details, quantity, asset information, and supporting remarks.</li><li><strong>Step 3:</strong> Inside <strong>Additional Fields</strong>, select <strong>'F1 FOC PO'</strong> in the CPC field.</li><li><strong>Step 4:</strong> Ensure PR is created asset-wise for proper monitoring and future analysis.</li><li><strong>Step 5:</strong> Save the PR after verification.</li><li><strong>Step 6:</strong> After saving, PR details will automatically reflect in <strong>Analysis → 07 F1 FOC PO</strong>.</li></ul><strong>Important Instructions:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>The <strong>F1</strong> field is specially added for tracking FOC activities.</li><li>Verify all mandatory fields before saving the PR.</li><li>Supporting documents should be attached properly for approval and audit purposes.</li><li>Incorrect PR entries may create delays in PO and GRN processing.</li></ul>",
+        note: "Always select 'F1 FOC PO' in Additional Fields → CPC for all FOC Purchase Requisitions.",
+        imageURL: "Images/foc-pr.png"
+    },
+    {
+        title: "FOC Purchase Order (PO)",
+        category: "Purchase",
+        module: "Purchase",
+        path: "Purchase → Order → PO Creation",
+        description: "The FOC (Free of Cost) Purchase Order (PO) process is used to create procurement orders against approved FOC Purchase Requisitions.<br><br><strong>PO Creation Steps:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Step 1:</strong> Open the PO Creation screen in the ERP system.</li><li><strong>Step 2:</strong> Select the approved FOC PR reference.</li><li><strong>Step 3:</strong> Verify vendor details, material details, quantity, and PR information.</li><li><strong>Step 4:</strong> Inside <strong>Additional Fields</strong>, select <strong>'F1 FOC PO'</strong> in the CPC field.</li><li><strong>Step 5:</strong> Tick the <strong>Sample</strong> checkbox for FOC items as shown in the system screenshot.</li><li><strong>Step 6:</strong> If applicable, update GST details under <strong>Sample GST</strong>.</li><li><strong>Step 7:</strong> Save and create the PO in both <strong>Old ERP System</strong> and <strong>.NET ERP System</strong>.</li></ul><strong>Important Instructions:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>PO should only be created against approved PR documents.</li><li>Material value may be nil in FOC cases, but GST may still apply as per statutory compliance.</li><li>Ensure both ERP systems are updated properly for CPC monitoring and reporting.</li><li>Verify all supporting documents before final PO posting.</li></ul>",
+        note: "For all FOC Purchase Orders, select 'F1 FOC PO' in CPC and tick the 'Sample' checkbox before saving.",
+        imageURL: "Images/foc-po.png"
+    },
+    {
+        title: "FOC Goods Receipt Note (GRN)",
+        category: "Purchase",
+        module: "Purchase",
+        path: "Store → GRN → GRN Creation",
+        description: "The Goods Receipt Note (GRN) is the final step in the FOC material inward process, officially confirming receipt of materials into the company inventory.<br><br><strong>GRN Creation Steps:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li><strong>Step 1:</strong> Open the GRN screen in the ERP system.</li><li><strong>Step 2:</strong> Select the corresponding FOC Purchase Order reference.</li><li><strong>Step 3:</strong> Physically inspect and verify the received material quantity and condition.</li><li><strong>Step 4:</strong> Tick the <strong>Sample</strong> checkbox only for FOC-related GRN entries.</li><li><strong>Step 5:</strong> Enter verified quantity and inward details in the GRN screen.</li><li><strong>Step 6:</strong> Complete all required quality checks before final posting.</li><li><strong>Step 7:</strong> Save the GRN in both <strong>Old ERP System</strong> and <strong>.NET ERP System</strong>.</li></ul><strong>Monitoring & Reporting:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>CPC Team monitors PR Pending Status, PO Pending Status, PR to PO processing duration, and delayed transactions.</li><li>Periodic reports are generated for management review and operational analysis.</li></ul><strong>Important Instructions:</strong><ul style='margin-left: 20px; margin-top: 8px;'><li>Ensure physical quantity matches GRN quantity before saving.</li><li>Verify linked PR and PO references carefully.</li><li>Inventory stock records will update automatically after GRN posting.</li><li>Maintain proper inward records for audit and tracking purposes.</li></ul>",
+        note: "Tick the 'Sample' checkbox only for FOC-related GRN transactions before final posting.",
+        imageURL: "Images/foc-grn.png"
+    },
     {
         title: "Purchase Order Creation",
         category: "Purchase",
@@ -228,10 +225,6 @@ const erpData = [
         note: "You can filter and use the grid exactly as per your specific scope (e.g., Location-wise or Item Code-wise) for targeted tracking.",
         imageURL: "Images/neww77.png"
     },
-
-
-
-    // --- NEW: Sample PDF SOP added here-------------------------------------------------------------------------------------------------------------------- ---
     {
         title: "Petty Cash Purchase SOP",
         category: "Other SOP",
@@ -239,7 +232,7 @@ const erpData = [
         path: "Documents → Other SOPs → Petty Cash Purchases (Downloadable PDF)",
         description: "This PDF contains the standard operating procedure for Petty Cash Purchases.",
         note: "Read all steps carefully to ensure with petty cash purchases.",
-        pdfURL: "SOP/SOP1.pdf" // Simply provide the path to your PDF here
+        pdfURL: "SOP/SOP1.pdf" 
     },
     {
         title: "Revision of SOP-01 – Petty Cash Purchase Order",
@@ -248,7 +241,7 @@ const erpData = [
         path: "Documents → Other SOPs → Revision of SOP-01 – Petty Cash Purchase Order (Downloadable PDF)",
         description: "This PDF contains the standard operating procedure for Petty Cash Purchases.",
         note: "Read all steps carefully to ensure with Revision of SOP-01 – Petty Cash Purchase Order.",
-        pdfURL: "SOP/revision.pdf" // Simply provide the path to your PDF here
+        pdfURL: "SOP/revision.pdf" 
     },
     {
         title: "GRN Locking System ERP Transaction Flow",
@@ -257,7 +250,7 @@ const erpData = [
         path: "Documents → Other SOPs → GRN Locking System SOP (Downloadable PDF)",
         description: "This PDF contains the standard operating procedure for the GRN Locking System.",
         note: "Read all steps carefully to ensure proper implementation of the GRN Locking System.",
-        pdfURL: "SOP/ERPFlowChart.pdf" // Simply provide the path to your PDF here
+        pdfURL: "SOP/ERPFlowChart.pdf" 
     },
     {
         title: "GRN Locking System (Purchase Department) ",
@@ -266,7 +259,7 @@ const erpData = [
         path: "Documents → Other SOPs → GRN Locking System (Purchase Department) (Downloadable PDF)",
         description: "This PDF contains the standard operating procedure for the GRN Locking System.",
         note: "Read all steps carefully to ensure proper implementation of the GRN Locking System.",
-        pdfURL: "SOP/GRNLockingSystemPO.pdf" // Simply provide the path to your PDF here
+        pdfURL: "SOP/GRNLockingSystemPO.pdf" 
     },
     {
         title: "New Equipment Tools and Tackles SOP",
@@ -275,7 +268,7 @@ const erpData = [
         path: "Documents → Other SOPs → New Equipment Tools and Tackles SOP (Downloadable PDF)",
         description: "This PDF contains the standard operating procedure for the GRN Locking System.",
         note: "Read all steps carefully to identify purpose, scope and responsibilities for the new equipment tools and tackles.",
-        pdfURL: "SOP/EquipmentToolsandTackles.pdf" // Simply provide the path to your PDF here
+        pdfURL: "SOP/EquipmentToolsandTackles.pdf" 
     },
     {
         title: "New Equipment Service Manual SOP",
@@ -284,7 +277,7 @@ const erpData = [
         path: "Documents → Other SOPs → New Equipment Service Manual SOP (Downloadable PDF)",
         description: "This PDF contains the standard operating procedure for the GRN Locking System.",
         note: "Read all steps carefully to understand the service procedures for the new equipment.",
-        pdfURL: "SOP/NewEquipmentServiceManual.pdf" // Simply provide the path to your PDF here
+        pdfURL: "SOP/NewEquipmentServiceManual.pdf" 
     },
     {
         title: "Standardized Procedure for third party services (Hiring Services) ",
@@ -293,7 +286,7 @@ const erpData = [
         path: "Documents → Other SOPs → Standardized Procedure for third party services (Hiring Services) (Downloadable PDF)",
         description: "This PDF contains the standard operating procedure for third party services (Hiring Services).",
         note: "Read all steps carefully to understand the standardized procedure for third party services (Hiring Services).",
-        pdfURL: "SOP/HiringService.pdf" // Simply provide the path to your PDF here
+        pdfURL: "SOP/HiringService.pdf" 
     },
     {
         title: "ERP Scrap Receipt Entry Process and Report SOP",
@@ -302,7 +295,7 @@ const erpData = [
         path: "Documents → Other SOPs → ERP Scrap Receipt Entry Process and Report SOP (Downloadable PDF)",
         description: "This PDF contains the standard operating procedure for the ERP Scrap Receipt Entry Process and Report.",
         note: "Read all steps carefully to understand the ERP Scrap Receipt Entry Process and Report.",
-        pdfURL: "SOP/ERPScrapReceipt.pdf" // Simply provide the path to your PDF here
+        pdfURL: "SOP/ERPScrapReceipt.pdf" 
     },
     {
         title: "Daily Consumption Report SOP",
@@ -311,7 +304,7 @@ const erpData = [
         path: "Documents → Other SOPs → Daily Consumption Report SOP (Downloadable PDF)",
         description: "This PDF contains the standard operating procedure for the Daily Consumption Report.",
         note: "Read all steps carefully to understand the daily consumption report procedure.",
-        pdfURL: "SOP/DailyConsumptionRSOP.pdf" // Simply provide the path to your PDF here
+        pdfURL: "SOP/DailyConsumptionRSOP.pdf" 
     },
     {
         title: "Party Return Note (PRN) Process – In Place of Return Purchase Order SOP",
@@ -320,7 +313,7 @@ const erpData = [
         path: "Documents → Other SOPs → Party Return Note (PRN) Process – In Place of Return Purchase Order SOP (Downloadable PDF)",
         description: "This PDF contains the standard operating procedure for the Party Return Note (PRN) Process.",
         note: "Read all steps carefully to understand the party return note process.",
-        pdfURL: "SOP/PRNReport.pdf" // Simply provide the path to your PDF here
+        pdfURL: "SOP/PRNReport.pdf" 
     },
     {
         title: "Revieved Party Return Note (PRN)",
@@ -329,7 +322,7 @@ const erpData = [
         path: "Documents → Other SOPs → Revieved Party Return Note (PRN) (Downloadable PDF)",
         description: "This PDF contains the standard operating procedure for the Party Return Note (PRN) Process.",
         note: "Read all steps carefully to understand the party return note process.",
-        pdfURL: "SOP/PartyReturnNote.pdf" // Simply provide the path to your PDF here
+        pdfURL: "SOP/PartyReturnNote.pdf" 
     }
 ];
 
@@ -347,7 +340,7 @@ const modalDescription = document.getElementById('modalDescription');
 const modalNote = document.getElementById('modalNote');
 const closeModalBtn = document.getElementById('closeModalBtn');
 const copyBtn = document.getElementById('copyBtn');
-const downloadBtn = document.getElementById('downloadBtn'); // Added variable
+const downloadBtn = document.getElementById('downloadBtn');
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 
@@ -375,24 +368,8 @@ if (localStorage.getItem('theme') === 'dark') {
     updateThemeIcon(true);
 }
 
+// Fixed: Rely only on native click
 themeToggle.addEventListener('click', toggleDarkMode, false);
-themeToggle.addEventListener('touchend', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    toggleDarkMode();
-}, false);
-
-// Prevent double trigger
-let lastThemeToggleTime = 0;
-const themeToggleOriginal = themeToggle.onclick;
-themeToggle.addEventListener('click', (e) => {
-    const now = Date.now();
-    if (now - lastThemeToggleTime < 300) {
-        e.preventDefault();
-        return;
-    }
-    lastThemeToggleTime = now;
-}, false);
 
 // --- 4. HELPER FUNCTIONS ---
 function getModuleClass(moduleName) {
@@ -473,7 +450,6 @@ function openModal(item) {
     modalPath.innerHTML = formatPath(item.path);
     currentPathText = item.path;
 
-    // Description logic
     if (item.description) {
         modalDescription.innerHTML = `<strong>Description:</strong> ${item.description}`;
         modalDescription.style.display = 'block';
@@ -481,24 +457,21 @@ function openModal(item) {
         modalDescription.style.display = 'none';
     }
 
-    // --- Button Swapping Logic ---
     if (item.pdfURL) {
         copyBtn.style.display = 'none';
         downloadBtn.style.display = 'flex';
-        downloadBtn.href = item.pdfURL; // Sets the download link
+        downloadBtn.href = item.pdfURL; 
     } else {
         copyBtn.style.display = 'flex';
         downloadBtn.style.display = 'none';
     }
 
-    // --- Media/Note Logic ---
     if (item.note || item.imageURL || item.pdfURL) {
         modalNote.style.display = 'block';
         let htmlContent = "";
 
         if (item.note) htmlContent += `<strong>Tip:</strong> ${item.note}`;
 
-        // If it has a PDF, show the iframe
         if (item.pdfURL) {
             htmlContent += `
                         <div style="margin-top: 15px; border-top: 1px dashed var(--border); padding-top: 15px;">
@@ -506,7 +479,6 @@ function openModal(item) {
                         </div>
                     `;
         }
-        // If it has an image, show the image
         else if (item.imageURL) {
             htmlContent += `
                         <div style="margin-top: 12px; border-top: 1px solid var(--border); padding-top: 12px;">
@@ -528,35 +500,23 @@ function closeModal() {
     modalOverlay.classList.remove('active'); 
 }
 
-// Multiple event listeners for close button to ensure it works on mobile
+// Fixed: rely on native click only
 closeModalBtn.addEventListener('click', closeModal, false);
-closeModalBtn.addEventListener('touchend', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    closeModal();
-}, false);
 
-// Close on overlay click (but not on modal content)
 modalOverlay.addEventListener('click', (e) => { 
     if (e.target === modalOverlay) {
         closeModal();
     }
 }, false);
 
-// Keyboard close
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
         closeModal();
     }
 });
 
+// Fixed: rely on native click only
 copyBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    handleCopyPath();
-}, false);
-
-copyBtn.addEventListener('touchend', (e) => {
     e.preventDefault();
     e.stopPropagation();
     handleCopyPath();
@@ -598,12 +558,7 @@ clearSearchBtn.addEventListener('click', () => {
 });
 
 // --- 8. MOBILE & TOUCH OPTIMIZATIONS ---
-// Prevent double-tap zoom on buttons
-document.addEventListener('touchend', function(e) {
-    if (e.target.tagName === 'BUTTON' || e.target.closest('button')) {
-        e.preventDefault();
-    }
-}, { passive: false });
+// Fixed: Removed the harmful touch event that prevented default button clicks.
 
 // Add touch feedback for cards on mobile
 document.addEventListener('touchstart', function(e) {
@@ -656,16 +611,6 @@ const modalObserver = new MutationObserver((mutations) => {
 });
 
 modalObserver.observe(modalOverlay, { attributes: true });
-
-// Improve keyboard behavior on mobile
-document.addEventListener('touchmove', function(e) {
-    if (e.target === searchInput) {
-        return;
-    }
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
-        return;
-    }
-}, { passive: true });
 
 // Initial render
 renderCards(erpData);
