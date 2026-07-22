@@ -813,6 +813,10 @@ body.dark-mode .btn-copy:hover {
     text-decoration: underline;
 }
 
+button {
+    touch-action: manipulation;
+}
+
 /* =========================================
    6. COMPLETELY RESPONSIVE BREAKPOINTS
 ========================================= */
